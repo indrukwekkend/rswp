@@ -1,8 +1,8 @@
 <?php get_template_part('templates/header', 'page'); ?>
 
 <?php if (!have_posts()) : ?>
-  <div class="alert alert-warning">
-    <?php _e('Sorry, no results were found.', 'sage'); ?>
+  <div class="alert alert-warning" role="warning">
+    <?php _e('Helaas, er zijn (nog) geen berichten om te lezen :(', 'sage'); ?>
   </div>
   <?php get_search_form(); ?>
 <?php endif; ?>
