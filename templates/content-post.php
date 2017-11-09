@@ -1,7 +1,5 @@
 <?php
-    // Gebruikt voor niet bestaande post types.
-    // Maak het bestand 'content-[post type].php' aan als je een afwijkende template wil gebruiken.
-    // Laat dit bestand zoals het is.
+    // Gebruikt voor berichten
 ?>
 
 <article <?php post_class(); ?>>
