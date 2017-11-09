@@ -15,7 +15,7 @@ Zorg ervoor dat het domein op AMPPS  WordPress 4.8 of hoger heeft geinstalleerd.
 
 Ga naar de map van het project (normaal: `/AMPPS-ROOT/www/creatego.dev/wp-content/themes/creatego`)
 
-In deze map vooer je een voor een (inverband met errors) de volgende commandos uit;
+In deze map voer je de volgende commandos uit:
 
 1. `npm install`
 2. `bower install`
