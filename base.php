@@ -18,7 +18,7 @@ use Roots\Sage\Wrapper;
 
 			<?php get_template_part('templates/header'); ?>
 
-			<main class="container" role="main">
+			<main role="main">
 
 				<div class="row">
 					<div class="col">
