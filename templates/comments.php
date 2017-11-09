@@ -14,12 +14,12 @@ if (post_password_required()) {
 
     <?php if (get_comment_pages_count() > 1 && get_option('page_comments')) : ?>
       <nav>
-        <ul class="pager">
+        <ul class="pagination">
           <?php if (get_previous_comments_link()) : ?>
-            <li class="previous"><?php previous_comments_link(__('&larr; Oudere reacties', 'sage')); ?></li>
+            <li class="page-item"><?php previous_comments_link(__('&larr; Oudere reacties', 'sage')); ?></li>
           <?php endif; ?>
           <?php if (get_next_comments_link()) : ?>
-            <li class="next"><?php next_comments_link(__('Nieuwere reacties &rarr;', 'sage')); ?></li>
+            <li class="page-item"><?php next_comments_link(__('Nieuwere reacties &rarr;', 'sage')); ?></li>
           <?php endif; ?>
         </ul>
       </nav>
