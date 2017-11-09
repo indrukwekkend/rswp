@@ -18,9 +18,20 @@ use Roots\Sage\Wrapper;
 
 			<?php get_template_part('templates/header'); ?>
 
-			<main class="main" role="main">
+			<main class="container" role="main">
 
-				<?php include Wrapper\template_path(); ?>
+				<div class="row">
+					<div class="col">
+						<?php include Wrapper\template_path(); ?>
+					</div>
+
+				<?php if (Setup\display_sidebar()) : ?>
+					<div class="col-4">
+						<?php include Wrapper\sidebar_path(); ?>
+					</div><!-- /.sidebar -->
+				<?php endif; ?>
+
+				</div>
 
 			</main><!-- /.main -->
 
