@@ -1,9 +1,11 @@
 <header>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container">
+
 			<a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">
 				<?php bloginfo('name'); ?>
 			</a>
+
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primary_navigation" aria-controls="primary_navigation" aria-expanded="false" aria-label="<?php _e('Wissel navigatie', 'sage');?>">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -27,4 +29,11 @@
 			</div>
 		</div>
 	</nav>
+
+	<?php if(is_front_page()): ?>
+
+		<?php get_template_part('templates/sections/jumbotron'); ?>
+
+	<?php endif;?>
+
 </header>
