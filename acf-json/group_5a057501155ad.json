@@ -8,7 +8,7 @@
             "name": "sections",
             "type": "flexible_content",
             "value": null,
-            "instructions": "",
+            "instructions": "Maak een keuze uit de secties.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -19,21 +19,49 @@
             "layouts": {
                 "5a057580dfa34": {
                     "key": "5a057580dfa34",
-                    "name": "titel_+_subtitel",
+                    "name": "section_display",
                     "label": "Titel + subtitel",
                     "display": "block",
                     "sub_fields": [
+                        {
+                            "key": "field_5a057e4973c59",
+                            "label": "Koptekst",
+                            "name": "display_type",
+                            "type": "select",
+                            "value": null,
+                            "instructions": "Stel de grootte in van de koptekst.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "20",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "display-1": "Koptekst 1",
+                                "display-2": "Koptekst 2",
+                                "display-3": "Koptekst 3",
+                                "display-4": "Koptekst 4"
+                            },
+                            "default_value": [],
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
                         {
                             "key": "field_5a0575e78ede1",
                             "label": "Titel",
                             "name": "title",
                             "type": "text",
                             "value": null,
-                            "instructions": "Voer hier de titel in.",
+                            "instructions": "Voer hier de titel in. (max. 150 tekens)",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": "80",
                                 "class": "",
                                 "id": ""
                             },
@@ -41,19 +69,19 @@
                             "placeholder": "",
                             "prepend": "",
                             "append": "",
-                            "maxlength": 30
+                            "maxlength": 150
                         },
                         {
                             "key": "field_5a0576028ede2",
                             "label": "Subtitel",
-                            "name": "subtitle",
+                            "name": "lead",
                             "type": "text",
                             "value": null,
-                            "instructions": "Voer hier de subtitel in.",
+                            "instructions": "Voer hier de subtitel in. (max. 150 tekens)",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": "100",
                                 "class": "",
                                 "id": ""
                             },
@@ -61,7 +89,79 @@
                             "placeholder": "",
                             "prepend": "",
                             "append": "",
-                            "maxlength": 60
+                            "maxlength": 150
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5a05862821379": {
+                    "key": "5a05862821379",
+                    "name": "section_featured",
+                    "label": "Featured",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a0586ab0aab5",
+                            "label": "Inhoud",
+                            "name": "content",
+                            "type": "repeater",
+                            "value": null,
+                            "instructions": "Instructies volgen.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "field_5a0586392137a",
+                            "min": 1,
+                            "max": 5,
+                            "layout": "block",
+                            "button_label": "Voeg blok toe",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5a0586392137a",
+                                    "label": "Titel",
+                                    "name": "title",
+                                    "type": "text",
+                                    "value": null,
+                                    "instructions": "Voer hier de titel in. (max. 150 tekens)",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5a05865a2137b",
+                                    "label": "Alinea",
+                                    "name": "lead",
+                                    "type": "textarea",
+                                    "value": null,
+                                    "instructions": "Voer hier de tekst in. (max. 250 tekens)",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": 250,
+                                    "rows": "",
+                                    "new_lines": "wpautop"
+                                }
+                            ]
                         }
                     ],
                     "min": "",
@@ -84,11 +184,11 @@
     ],
     "menu_order": 0,
     "position": "normal",
-    "style": "default",
+    "style": "seamless",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1510308367
+    "modified": 1510312165
 }
