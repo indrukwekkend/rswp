@@ -143,7 +143,7 @@
                                 },
                                 {
                                     "key": "field_5a05865a2137b",
-                                    "label": "Alinea",
+                                    "label": "Inhoud",
                                     "name": "lead",
                                     "type": "textarea",
                                     "value": null,
@@ -166,10 +166,217 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "5a058a26348d6": {
+                    "key": "5a058a26348d6",
+                    "name": "section_visual",
+                    "label": "Visual",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a058a96348d7",
+                            "label": "Afbeelding",
+                            "name": "image",
+                            "type": "image",
+                            "value": null,
+                            "instructions": "Instructies volgen.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "jpg, png"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5a058ae0348d9": {
+                    "key": "5a058ae0348d9",
+                    "name": "section_brands",
+                    "label": "Merken",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a058aea348da",
+                            "label": "Merken",
+                            "name": "brands",
+                            "type": "repeater",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "table",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5a058af9348db",
+                                    "label": "Merk",
+                                    "name": "brand",
+                                    "type": "text",
+                                    "value": null,
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5a058b0a348dc",
+                                    "label": "Afbeelding",
+                                    "name": "image",
+                                    "type": "image",
+                                    "value": null,
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "jpg,png"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5a059b2895d13": {
+                    "key": "5a059b2895d13",
+                    "name": "section_featurette",
+                    "label": "Featurette",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a059c1b95d17",
+                            "label": "Afbeelding Links\/Rechts",
+                            "name": "order",
+                            "type": "true_false",
+                            "value": null,
+                            "instructions": "Instructies volgen.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "100",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Rechts",
+                            "ui_off_text": "Links"
+                        },
+                        {
+                            "key": "field_5a059b3495d14",
+                            "label": "Titel",
+                            "name": "title",
+                            "type": "text",
+                            "value": null,
+                            "instructions": "Instructies volgen. (max. 150 tekens)",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": 150
+                        },
+                        {
+                            "key": "field_5a059baa95d16",
+                            "label": "Afbeelding",
+                            "name": "image",
+                            "type": "image",
+                            "value": null,
+                            "instructions": "Insctructies volgen.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "jpg,png"
+                        },
+                        {
+                            "key": "field_5a059ba395d15",
+                            "label": "Inhoud",
+                            "name": "lead",
+                            "type": "textarea",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Voeg sectie toe",
-            "min": "",
+            "min": 1,
             "max": 20
         }
     ],
@@ -190,5 +397,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1510312165
+    "modified": 1510318109
 }

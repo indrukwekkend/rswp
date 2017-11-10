@@ -9,5 +9,9 @@
 			<?php get_template_part('templates/sections/featured'); ?>
 		<?php endif;?>
 
+		<?php if( get_row_layout() == 'section_featurette' ): ?>
+			<?php get_template_part('templates/sections/featurette'); ?>
+		<?php endif;?>
+
 	<?php endwhile;?>
 <?php endif;?>
