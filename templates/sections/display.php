@@ -1,4 +1,4 @@
-<section class="container">
+<section class="container display">
 	<div class="row text-center">
 		<div class="col-12">
 			<h1 class="<?php the_sub_field('display_type'); ?>">
