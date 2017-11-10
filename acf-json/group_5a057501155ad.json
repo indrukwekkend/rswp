@@ -1,0 +1,94 @@
+{
+    "key": "group_5a057501155ad",
+    "title": "Pagina Inhoud",
+    "fields": [
+        {
+            "key": "field_5a0575228ede0",
+            "label": "Secties",
+            "name": "sections",
+            "type": "flexible_content",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "5a057580dfa34": {
+                    "key": "5a057580dfa34",
+                    "name": "titel_+_subtitel",
+                    "label": "Titel + subtitel",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a0575e78ede1",
+                            "label": "Titel",
+                            "name": "title",
+                            "type": "text",
+                            "value": null,
+                            "instructions": "Voer hier de titel in.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": 30
+                        },
+                        {
+                            "key": "field_5a0576028ede2",
+                            "label": "Subtitel",
+                            "name": "subtitle",
+                            "type": "text",
+                            "value": null,
+                            "instructions": "Voer hier de subtitel in.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": 60
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Voeg sectie toe",
+            "min": "",
+            "max": 20
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1510308367
+}
