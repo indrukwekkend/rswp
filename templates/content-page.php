@@ -13,5 +13,9 @@
 			<?php get_template_part('templates/sections/featurette'); ?>
 		<?php endif;?>
 
+		<?php if( get_row_layout() == 'section_visual' ): ?>
+			<?php get_template_part('templates/sections/visual'); ?>
+		<?php endif;?>
+
 	<?php endwhile;?>
 <?php endif;?>
