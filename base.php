@@ -18,8 +18,6 @@ use Roots\Sage\Wrapper;
 
 			<?php get_template_part('templates/header'); ?>
 
-
-
 			<main class="main" role="main">
 
 				<?php include Wrapper\template_path(); ?>
@@ -35,8 +33,6 @@ use Roots\Sage\Wrapper;
 			</aside><!-- /.sidebar -->
 
 		<?php endif; ?>
-
-
 
 		<?php do_action('get_footer'); ?>
 
