@@ -1,12 +1,18 @@
 <?php
 /**
- * Template Name: Voorpagina Template
- * 
- * Omdat we dit template ook voor bijv. een contact pagina willen gebruiken.
+ * Template Name: Pagina met Hero
  */
 ?>
 
 <?php while (have_posts()) : the_post(); ?>
-  <?php get_template_part('templates/header', 'frontpage'); ?>
-  <?php get_template_part('templates/content', 'page'); ?>
+
+	<section class="container">
+		<div class="row">
+			<div class="col">
+				<?php the_title(); ?>
+				<?php the_content(); ?>
+			</div>
+		</div>
+	</section>
+
 <?php endwhile; ?>
