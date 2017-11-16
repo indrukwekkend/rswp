@@ -2,7 +2,7 @@
 
 	<?php if( have_rows('brands') ) : ?>
 
-		<div class="row">
+		<div class="row py-3">
 
 			<?php  while( have_rows('brands') ) : the_row(); ?>
 

@@ -1,6 +1,6 @@
 <section class="container display">
 
-	<div class="row text-center">
+	<div class="row py-3 text-center">
 
 		<div class="col-12">
 
