@@ -11,20 +11,57 @@ $background = function($has_post_thumbnail){
     endif;
 
     return;
-}
+};
+
+// Bedoeling is dat je op elke pagina een Jumbotron kan plaatsen.
+$jumbotron = get_field('jumbotron');
 
 ?>
 
 <section class="jumbotron m-0" <?= $background( has_post_thumbnail() ); ?>>
+
 	<div class="container">
+
 		<div class="row">
+
 			<div class="col-12 text-center">
-				<h1 class="jumbotron-heading">Jumbotron titel</h1>
-				<p class="lead">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</p>
-				<p>
-					<a href="#cta-1" class="btn btn-primary">CTA #1</a> <a href="#cta-2" class="btn btn-secondary">CTA #2</a>
-				</p>
+
+				<?php if( $jumbotron ): ?>
+
+					<?php if( $jumbotron['title'] ): ?>
+
+						<h1 class="jumbotron-heading text-white">
+							<?= $jumbotron['title']; ?>
+						</h1>
+
+					<?php endif; ?>
+
+					<?php if( $jumbotron['lead'] ): ?>
+
+						<div class="lead text-white">
+							<?= $jumbotron['lead'];?>
+						</div>
+
+					<?php endif; ?>
+
+					<?php if( $jumbotron['cta'] ): ?>
+						<div>
+							<?php foreach($jumbotron["cta"] as $cta ) :?>
+
+								<?php $color = ($cta['color']) ? "btn-" . $cta['color'] : "btn-primary"; ?>
+
+								<a href="<?= $cta['url']; ?>" class="btn <?= $color; ?>"><?= $cta['label'] ?></a>
+
+							<?php endforeach; ?>
+						</div>
+					<?php endif; ?>
+
+				<?php endif; ?>
+
 			</div>
+
 		</div>
+
 	</div>
+
 </section>
