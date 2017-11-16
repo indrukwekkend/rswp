@@ -21,5 +21,9 @@
 			<?php get_template_part('templates/sections/brands'); ?>
 		<?php endif;?>
 
+		<?php if( get_row_layout() == 'section_quote' ): ?>
+			<?php get_template_part('templates/sections/quote'); ?>
+		<?php endif;?>
+
 	<?php endwhile;?>
 <?php endif;?>
