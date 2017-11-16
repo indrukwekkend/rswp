@@ -9,6 +9,8 @@ $height = $image['sizes'][ $size . '-height' ];
 $title = $image['title'];
 $alt = $image['alt'];
 
+$cta_group = get_sub_field('cta');
+
 ?>
 
 <section class="container featurette">
@@ -21,9 +23,29 @@ $alt = $image['alt'];
 				<?php the_sub_field('title'); ?>
 			</h2>
 
-			<p class="lead">
+			<h3 class="mb-3">
 				<?php the_sub_field('lead'); ?>
-			</p>
+			</h3>
+
+			<span class="lead">
+				<?php the_sub_field('content'); ?>
+			</span>
+
+			<div class="mt-3">
+
+				<?php if( $cta_group ) : ?>
+
+					<?php foreach($cta_group as $cta) : ?>
+
+						<?php $color = ($cta['color']) ? "btn-" . $cta['color'] : "btn-primary" ;?>
+
+						<a class="btn <?= $color; ?>" href="<?= $cta['url']; ?>"><?= $cta['label']; ?></a>
+
+					<?php endforeach; ?>
+
+				<?php endif; ?>
+
+			</div>
 
 		</div>
 
