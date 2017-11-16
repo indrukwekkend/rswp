@@ -3,11 +3,146 @@
     "title": "Pagina Inhoud",
     "fields": [
         {
+            "key": "field_5a0d9f501fa8a",
+            "label": "Jumbotron",
+            "name": "jumbotron",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5a0d9f501fa8b",
+                    "label": "Titel",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "60",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5a0d9f501fa8c",
+                    "label": "Alinea",
+                    "name": "lead",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "60",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": "wpautop"
+                },
+                {
+                    "key": "field_5a0d9f501fa8d",
+                    "label": "Call To Action",
+                    "name": "cta",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "block",
+                    "button_label": "Voeg knop toe",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a0d9f501fa8e",
+                            "label": "Label",
+                            "name": "label",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "40",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5a0d9f501fa8f",
+                            "label": "URL",
+                            "name": "url",
+                            "type": "url",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "40",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5a0d9f501fa90",
+                            "label": "Kleur",
+                            "name": "color",
+                            "type": "select",
+                            "instructions": "kies hier de kleur van de knop.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "20",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "primary": "Primair",
+                                "secondary": "Secondair"
+                            },
+                            "default_value": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 1,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "key": "field_5a0575228ede0",
             "label": "Secties",
             "name": "sections",
             "type": "flexible_content",
-            "value": null,
             "instructions": "Maak een keuze uit de secties.",
             "required": 0,
             "conditional_logic": 0,
@@ -28,7 +163,6 @@
                             "label": "Koptekst",
                             "name": "display_type",
                             "type": "select",
-                            "value": null,
                             "instructions": "Stel de grootte in van de koptekst.",
                             "required": 0,
                             "conditional_logic": 0,
@@ -56,7 +190,6 @@
                             "label": "Titel",
                             "name": "title",
                             "type": "text",
-                            "value": null,
                             "instructions": "Voer hier de titel in. (max. 150 tekens)",
                             "required": 0,
                             "conditional_logic": 0,
@@ -76,7 +209,6 @@
                             "label": "Subtitel",
                             "name": "lead",
                             "type": "text",
-                            "value": null,
                             "instructions": "Voer hier de subtitel in. (max. 150 tekens)",
                             "required": 0,
                             "conditional_logic": 0,
@@ -106,7 +238,6 @@
                             "label": "Inhoud",
                             "name": "content",
                             "type": "repeater",
-                            "value": null,
                             "instructions": "Instructies volgen.",
                             "required": 0,
                             "conditional_logic": 0,
@@ -126,7 +257,6 @@
                                     "label": "Titel",
                                     "name": "title",
                                     "type": "text",
-                                    "value": null,
                                     "instructions": "Voer hier de titel in. (max. 150 tekens)",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -146,7 +276,6 @@
                                     "label": "Inhoud",
                                     "name": "lead",
                                     "type": "textarea",
-                                    "value": null,
                                     "instructions": "Voer hier de tekst in. (max. 250 tekens)",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -178,7 +307,6 @@
                             "label": "Afbeelding",
                             "name": "image",
                             "type": "image",
-                            "value": null,
                             "instructions": "Instructies volgen.",
                             "required": 0,
                             "conditional_logic": 0,
@@ -213,7 +341,6 @@
                             "label": "Merken",
                             "name": "brands",
                             "type": "repeater",
-                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -233,7 +360,6 @@
                                     "label": "Merk",
                                     "name": "brand",
                                     "type": "text",
-                                    "value": null,
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -253,7 +379,6 @@
                                     "label": "Afbeelding",
                                     "name": "image",
                                     "type": "image",
-                                    "value": null,
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -286,36 +411,15 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5a059c1b95d17",
-                            "label": "Afbeelding Links\/Rechts",
-                            "name": "order",
-                            "type": "true_false",
-                            "value": null,
-                            "instructions": "Instructies volgen.",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "100",
-                                "class": "",
-                                "id": ""
-                            },
-                            "message": "",
-                            "default_value": 0,
-                            "ui": 1,
-                            "ui_on_text": "Rechts",
-                            "ui_off_text": "Links"
-                        },
-                        {
                             "key": "field_5a059b3495d14",
                             "label": "Titel",
                             "name": "title",
                             "type": "text",
-                            "value": null,
                             "instructions": "Instructies volgen. (max. 150 tekens)",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "50",
+                                "width": "100",
                                 "class": "",
                                 "id": ""
                             },
@@ -326,16 +430,72 @@
                             "maxlength": 150
                         },
                         {
+                            "key": "field_5a0da55338349",
+                            "label": "Alinea",
+                            "name": "lead",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "65",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5a059c1b95d17",
+                            "label": "Afbeelding Links\/Rechts",
+                            "name": "order",
+                            "type": "true_false",
+                            "instructions": "Instructies volgen.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "35",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Links",
+                            "ui_off_text": "Rechts"
+                        },
+                        {
+                            "key": "field_5a059ba395d15",
+                            "label": "Inhoud",
+                            "name": "content",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "65",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": "wpautop"
+                        },
+                        {
                             "key": "field_5a059baa95d16",
                             "label": "Afbeelding",
                             "name": "image",
                             "type": "image",
-                            "value": null,
                             "instructions": "Insctructies volgen.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "50",
+                                "width": "35",
                                 "class": "",
                                 "id": ""
                             },
@@ -351,24 +511,136 @@
                             "mime_types": "jpg,png"
                         },
                         {
-                            "key": "field_5a059ba395d15",
-                            "label": "Inhoud",
-                            "name": "lead",
-                            "type": "textarea",
-                            "value": null,
+                            "key": "field_5a0da7eaac5c6",
+                            "label": "Call To Action",
+                            "name": "cta",
+                            "type": "repeater",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "50",
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "table",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5a0da7fdac5c7",
+                                    "label": "label",
+                                    "name": "label",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "40",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5a0da809ac5c8",
+                                    "label": "URL",
+                                    "name": "url",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "40",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5a0da81cac5c9",
+                                    "label": "Kleur",
+                                    "name": "color",
+                                    "type": "select",
+                                    "instructions": "kies hier de kleur van de knop.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "20",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "primary": "Primair",
+                                        "secondary": "Secundair"
+                                    },
+                                    "default_value": [],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "return_format": "value",
+                                    "placeholder": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5a0daee9e2b3c": {
+                    "key": "5a0daee9e2b3c",
+                    "name": "section_quote",
+                    "label": "Quote",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a0daef1e2b3d",
+                            "label": "Inhoud",
+                            "name": "content",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
                                 "class": "",
                                 "id": ""
                             },
                             "default_value": "",
                             "placeholder": "",
                             "maxlength": "",
-                            "rows": "",
-                            "new_lines": ""
+                            "rows": 6,
+                            "new_lines": "wpautop"
+                        },
+                        {
+                            "key": "field_5a0db0158054f",
+                            "label": "Bron",
+                            "name": "source",
+                            "type": "text",
+                            "instructions": "Voer hier de bron van de quote in indien van toepassing.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
                         }
                     ],
                     "min": "",
@@ -411,5 +683,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1510321995
+    "modified": 1510846521
 }
