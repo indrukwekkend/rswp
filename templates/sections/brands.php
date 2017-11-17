@@ -1,41 +1,45 @@
-<section class="container-fluid">
+<section class="brands">
 
-	<?php if( have_rows('brands') ) : ?>
+	<div class="container">
 
-		<div class="row py-3">
+		<?php if( have_rows('brands') ) : ?>
 
-			<?php  while( have_rows('brands') ) : the_row(); ?>
+			<div class="row py-3">
 
-			<?php $image = get_sub_field('image'); ?>
-			<?php $size = 'large'; ?>
-			<?php $thumb = $image['sizes'][ $size ]; ?>
-			<?php $width = $image['sizes'][ $size . '-width' ];?>
-			<?php $height = $image['sizes'][ $size . '-height' ];?>
-			<?php $title = $image['title']; ?>
-			<?php $alt = $image['alt']; ?>
+				<?php  while( have_rows('brands') ) : the_row(); ?>
 
-				<div class="col-12 col-md text-center">
+				<?php $image = get_sub_field('image'); ?>
+				<?php $size = 'large'; ?>
+				<?php $thumb = $image['sizes'][ $size ]; ?>
+				<?php $width = $image['sizes'][ $size . '-width' ];?>
+				<?php $height = $image['sizes'][ $size . '-height' ];?>
+				<?php $title = $image['title']; ?>
+				<?php $alt = $image['alt']; ?>
 
-					<figure class="figure">
+					<div class="col-12 col-md text-center">
 
-						<img class="figure-img img-fluid" title="<?= $title; ?>" alt="<?= $alt; ?>" src="<?= $thumb; ?>" width="<?= $width; ?>" height="<?= $height; ?>" >
+						<figure class="figure">
 
-						<?php if( get_sub_field('caption') ) : ?>
+							<img class="figure-img img-fluid" title="<?= $title; ?>" alt="<?= $alt; ?>" src="<?= $thumb; ?>" width="<?= $width; ?>" height="<?= $height; ?>" >
 
-							<figcaption class="figure-caption">
-								<?php the_field('caption'); ?>
-							</figcaption>
+							<?php if( get_sub_field('caption') ) : ?>
 
-						<?php endif; ?>
+								<figcaption class="figure-caption">
+									<?php the_field('caption'); ?>
+								</figcaption>
 
-					</figure>
+							<?php endif; ?>
 
-				</div>
+						</figure>
 
-			<?php endwhile; ?>
+					</div>
 
-		</div>
+				<?php endwhile; ?>
 
-	<?php endif; ?>
+			</div>
+
+		<?php endif; ?>
+
+	</div>
 
 </section>

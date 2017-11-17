@@ -14,13 +14,17 @@ $background = 'style="background-image:url('.$thumb.');"';
 
 ?>
 
-<section class="container-fluid visual" <?= $background; ?>>
+<section class="visual" <?= $background; ?>>
 
-	<div class="row">
+	<div class="container">
 
-		<div class="col-12">
+		<div class="row">
 
-			<!-- Hier kan eventueel nog content komen -->
+			<div class="col-12">
+
+				<!-- Hier kan eventueel nog content komen -->
+
+			</div>
 
 		</div>
 
