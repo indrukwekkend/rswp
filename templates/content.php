@@ -1,15 +1,26 @@
 <?php
-    // Gebruikt voor niet bestaande post types.
-    // Maak het bestand 'content-[post type].php' aan als je een afwijkende template wil gebruiken.
-    // Laat dit bestand zoals het is.
+// TODO: Optie inbouwen in de customizer zodat er gekozen kan worden tussen weergave modus:
+// Masonry, Grid, Lijst
 ?>
 
-<article <?php post_class(); ?>>
-  <header>
-    <h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-    <?php get_template_part('templates/entry-meta'); ?>
-  </header>
-  <div class="entry-summary">
-    <?php the_excerpt(); ?>
-  </div>
+<article <?php post_class('card'); ?> >
+
+	<?php if( get_the_post_thumbnail_url('thumbnail') ) : ?>
+
+		<img class="card-img-top" src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
+
+	<?php endif; ?>
+
+	<div class="card-body">
+
+		<h4 class="card-title"><?php the_title(); ?></h4>
+
+		<?php get_template_part('templates/entry-meta'); ?>
+
+		<p class="card-text"><?php the_excerpt(); ?></p>
+
+		<a href="<?php the_permalink(); ?>" class="btn btn-primary">Lees meer</a>
+
+	</div>
+
 </article>
