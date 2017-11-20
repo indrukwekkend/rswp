@@ -1,0 +1,160 @@
+{
+    "key": "group_5a12e5f8f0c18",
+    "title": "Jumbotron Inhoud",
+    "fields": [
+        {
+            "key": "field_5a0d9f501fa8a",
+            "label": "Jumbotron",
+            "name": "jumbotron",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5a0d9f501fa8b",
+                    "label": "Titel",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "Voer hier de titeltekst in.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "60",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5a0d9f501fa8c",
+                    "label": "Alinea",
+                    "name": "lead",
+                    "type": "textarea",
+                    "instructions": "Voer hier een begeleidende tekst in.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "60",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": "wpautop"
+                },
+                {
+                    "key": "field_5a0d9f501fa8d",
+                    "label": "Call To Action",
+                    "name": "cta",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "block",
+                    "button_label": "Voeg knop toe",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a0d9f501fa8e",
+                            "label": "Label",
+                            "name": "label",
+                            "type": "text",
+                            "instructions": "Voer hier de tekst in van de CTA.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "40",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5a0d9f501fa8f",
+                            "label": "URL",
+                            "name": "url",
+                            "type": "url",
+                            "instructions": "Voer hier de link in van de CTA",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "40",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5a0d9f501fa90",
+                            "label": "Kleur",
+                            "name": "color",
+                            "type": "select",
+                            "instructions": "kies hier de kleur van de knop.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "20",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "primary": "Primair",
+                                "secondary": "Secondair"
+                            },
+                            "default_value": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 1,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1511187987
+}
