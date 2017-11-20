@@ -22,12 +22,11 @@ $jumbotron = get_field('jumbotron');
 
 	<div class="container">
 
-		<?php if( $jumbotron ): ?>
+		<?php if( $jumbotron['title'] or $jumbotron['lead'] or $jumbotron['cta']): ?>
 
 			<div class="row py-5">
 
 				<div class="col-12 py-5">
-
 
 					<?php if( $jumbotron['title'] ): ?>
 
