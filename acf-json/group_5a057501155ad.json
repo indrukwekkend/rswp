@@ -375,7 +375,7 @@
                         },
                         {
                             "key": "field_5a0da55338349",
-                            "label": "Alinea",
+                            "label": "Subtitel",
                             "name": "lead",
                             "type": "text",
                             "instructions": "",
@@ -589,6 +589,96 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "5a12f51001a2f": {
+                    "key": "5a12f51001a2f",
+                    "name": "section_posts",
+                    "label": "Posts",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a12f52701a30",
+                            "label": "Titel",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5a12f53001a31",
+                            "label": "Subtitel",
+                            "name": "lead",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5a12f56501a32",
+                            "label": "Taxonomy",
+                            "name": "taxonomy",
+                            "type": "taxonomy",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "70",
+                                "class": "",
+                                "id": ""
+                            },
+                            "taxonomy": "category",
+                            "field_type": "select",
+                            "allow_null": 0,
+                            "add_term": 1,
+                            "save_terms": 0,
+                            "load_terms": 0,
+                            "return_format": "id",
+                            "multiple": 0
+                        },
+                        {
+                            "key": "field_5a12f5ff24a37",
+                            "label": "Aantal",
+                            "name": "amount",
+                            "type": "range",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "min": 1,
+                            "max": 4,
+                            "step": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Voeg sectie toe",
@@ -627,5 +717,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1511187977
+    "modified": 1511195206
 }
