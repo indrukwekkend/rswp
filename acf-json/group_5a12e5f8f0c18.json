@@ -176,13 +176,11 @@
         "slug",
         "author",
         "format",
-        "page_attributes",
-        "featured_image",
         "categories",
         "tags",
         "send-trackbacks"
     ],
     "active": 1,
     "description": "",
-    "modified": 1511189252
+    "modified": 1511189475
 }
