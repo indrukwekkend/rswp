@@ -18,19 +18,20 @@ $jumbotron = get_field('jumbotron');
 
 ?>
 
-<section class="jumbotron m-0" <?= $background( has_post_thumbnail() ); ?>>
+<section class="jumbotron jumbotron-fluid m-0 p-0" <?= $background( has_post_thumbnail() ); ?>>
 
 	<div class="container">
 
-		<div class="row">
+		<?php if( $jumbotron ): ?>
 
-			<div class="col-12 text-center">
+			<div class="row py-5">
 
-				<?php if( $jumbotron ): ?>
+				<div class="col-12 py-5">
+
 
 					<?php if( $jumbotron['title'] ): ?>
 
-						<h1 class="jumbotron-heading text-white">
+						<h1 class="jumbotron-heading display-3 text-white">
 							<?= $jumbotron['title']; ?>
 						</h1>
 
@@ -45,6 +46,7 @@ $jumbotron = get_field('jumbotron');
 					<?php endif; ?>
 
 					<?php if( $jumbotron['cta'] ): ?>
+
 						<div>
 							<?php foreach($jumbotron["cta"] as $cta ) :?>
 
@@ -54,11 +56,12 @@ $jumbotron = get_field('jumbotron');
 
 							<?php endforeach; ?>
 						</div>
+
 					<?php endif; ?>
 
-				<?php endif; ?>
+				</div>
 
-			</div>
+			<?php endif; ?>
 
 		</div>
 

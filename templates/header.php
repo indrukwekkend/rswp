@@ -30,7 +30,7 @@
 		</div>
 	</nav>
 
-	<?php if( is_front_page() or has_post_thumbnail() ) : ?>
+	<?php if( is_front_page() or has_post_thumbnail() or is_page_template('template-jumbotron.php') ) : ?>
 
 		<?php get_template_part('templates/sections/jumbotron'); ?>
 
