@@ -6,7 +6,7 @@ $background = function($has_post_thumbnail){
 
         $url = get_the_post_thumbnail_url();
 
-        return 'style="background-image: url('.$url.');"';
+        return 'style="background-image: url('.$url.');min-height:380px;"';
 
     endif;
 
