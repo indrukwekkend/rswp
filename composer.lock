@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e7d308528a4658569b333c1e037ca68f",
-    "content-hash": "6f863b7f691f61f42fdebcb494372b2c",
+    "hash": "4f5bbe6653917d92dd5204c9c61a9eef",
+    "content-hash": "893e3c03f867ea3999c4aceaa77ac3b3",
     "packages": [
         {
             "name": "composer/installers",
@@ -222,12 +222,47 @@
                 "wordpress"
             ],
             "time": "2016-05-19 15:46:51"
+        },
+        {
+            "name": "wp-bootstrap/wp-bootstrap-navwalker",
+            "version": "v4.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-bootstrap/wp-bootstrap-navwalker.git",
+                "reference": "09f9b3f8812a8af70bbd904f0115816dc10d03ce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wp-bootstrap/wp-bootstrap-navwalker/zipball/09f9b3f8812a8af70bbd904f0115816dc10d03ce",
+                "reference": "09f9b3f8812a8af70bbd904f0115816dc10d03ce",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "require-dev": {
+                "stevegrunwell/wp-enforcer": "^0.4.1"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Brandon Hubbard"
+                }
+            ],
+            "description": "A custom WordPress nav walker class to fully implement the Bootstrap 3.0+ navigation style in a custom theme using the WordPress built in menu manager.",
+            "time": "2017-11-20 17:04:47"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "wp-bootstrap/wp-bootstrap-navwalker": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
