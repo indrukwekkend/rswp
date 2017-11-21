@@ -636,10 +636,10 @@
                         },
                         {
                             "key": "field_5a12f56501a32",
-                            "label": "Taxonomy",
+                            "label": "Category",
                             "name": "taxonomy",
                             "type": "taxonomy",
-                            "instructions": "",
+                            "instructions": "Kies een categorie welke getoond moet worden.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -649,7 +649,7 @@
                             },
                             "taxonomy": "category",
                             "field_type": "select",
-                            "allow_null": 0,
+                            "allow_null": 1,
                             "add_term": 1,
                             "save_terms": 0,
                             "load_terms": 0,
@@ -661,7 +661,7 @@
                             "label": "Aantal",
                             "name": "amount",
                             "type": "range",
-                            "instructions": "",
+                            "instructions": "Kies het aantal berichten wat getoond moet worden.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -717,5 +717,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1511195206
+    "modified": 1511253453
 }
