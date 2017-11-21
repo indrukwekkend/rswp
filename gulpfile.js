@@ -297,3 +297,23 @@ gulp.task('wiredep', function() {
 gulp.task('default', ['clean'], function() {
   gulp.start('build');
 });
+
+//### Zip
+//`gulp zip` - Zip up a distribution of the compiled WordPress theme.
+//Run after doing a build.
+gulp.task('zip', function(callback) {
+return gulp.src([
+ 'dist/**/*',
+ 'lang/*',
+ 'lib/**/*',
+ 'vendor/*',
+ 'templates/*',
+ '*.css',
+ '*.md',
+ '*.php',
+ '*.txt'
+], {
+ base: '.'
+})
+ .pipe(gulp.dest('../release'));
+});
