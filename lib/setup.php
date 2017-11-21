@@ -3,7 +3,6 @@
 namespace Roots\Sage\Setup;
 
 use Roots\Sage\Assets;
-use Roots\Sage\Plugins;
 
 /**
  * Theme setup
@@ -139,7 +138,7 @@ function register_required_plugins() {
         'is_automatic' => true,
     );
 
-    Plugins\tgmpa( $plugins, $config );
+    tgmpa( $plugins, $config );
 }
 
 add_action( 'after_setup_theme', __NAMESPACE__ . '\\register_required_plugins' );
