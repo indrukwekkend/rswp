@@ -29,5 +29,9 @@
 			<?php get_template_part('templates/sections/posts'); ?>
 		<?php endif;?>
 
+		<?php if( get_row_layout() == 'section_maps' ): ?>
+			<?php get_template_part('templates/sections/maps'); ?>
+		<?php endif;?>
+
 	<?php endwhile;?>
 <?php endif;?>
