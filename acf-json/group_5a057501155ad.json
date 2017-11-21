@@ -91,6 +91,59 @@
                     "min": "",
                     "max": ""
                 },
+                "5a144c96221c3": {
+                    "key": "5a144c96221c3",
+                    "name": "test",
+                    "label": "Test",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a144c9f221c4",
+                            "label": "Titel",
+                            "name": "titel",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5a144ca5221c5",
+                            "label": "Afbeelding",
+                            "name": "afbeelding",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "5a05862821379": {
                     "key": "5a05862821379",
                     "name": "section_featured",
@@ -717,5 +770,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1511253453
+    "modified": 1511279811
 }
