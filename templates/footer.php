@@ -15,7 +15,7 @@
                     'container_id' => 'footer_navigation',
                     'menu_class' => 'nav justify-content-center',
                     'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
-                    'walker' => new Roots\Sage\Boostrap_Walker\WP_Bootstrap_Navwalker()
+                    'walker' => new WP_Bootstrap_Navwalker()
                 ));
             ?>
 		</div>
