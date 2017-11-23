@@ -5,9 +5,9 @@
 
 <article <?php post_class('card'); ?> >
 
-	<?php if( get_the_post_thumbnail_url('thumbnail') ) : ?>
+	<?php if( has_post_thumbnail() ) : ?>
 
-		<img class="card-img-top" src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
+		<img class="card-img-top" src="<?php the_post_thumbnail_url('medium'); ?>" alt="<?php the_title(); ?>">
 
 	<?php endif; ?>
 
