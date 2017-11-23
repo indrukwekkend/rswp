@@ -60,7 +60,7 @@ $cta_group = get_sub_field('cta');
 					<?php if( get_sub_field('caption') ) : ?>
 
 						<figcaption class="figure-caption">
-							<?php the_field('caption'); ?>
+							<?php the_sub_field('caption'); ?>
 						</figcaption>
 
 					<?php endif; ?>
