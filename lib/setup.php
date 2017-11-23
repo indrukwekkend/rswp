@@ -140,5 +140,15 @@ function register_required_plugins() {
 
     tgmpa( $plugins, $config );
 }
-
 add_action( 'after_setup_theme', __NAMESPACE__ . '\\register_required_plugins' );
+
+
+/*
+ * ACF Google Maps API Key
+ */
+function acf_google_maps_key() {
+
+    acf_update_setting('google_api_key', 'AIzaSyB5QTXactMQKDZThuga9XwRtr5r1TC3fTs');
+
+}
+add_action('acf/init', __NAMESPACE__ . '\\acf_google_maps_key');
