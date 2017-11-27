@@ -91,6 +91,59 @@
                     "min": "",
                     "max": ""
                 },
+                "5a144c96221c3": {
+                    "key": "5a144c96221c3",
+                    "name": "test",
+                    "label": "Test",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a144c9f221c4",
+                            "label": "Titel",
+                            "name": "titel",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5a144ca5221c5",
+                            "label": "Afbeelding",
+                            "name": "afbeelding",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "5a05862821379": {
                     "key": "5a05862821379",
                     "name": "section_featured",
@@ -375,7 +428,7 @@
                         },
                         {
                             "key": "field_5a0da55338349",
-                            "label": "Alinea",
+                            "label": "Subtitel",
                             "name": "lead",
                             "type": "text",
                             "instructions": "",
@@ -590,14 +643,14 @@
                     "min": "",
                     "max": ""
                 },
-                "5a16b0005c143": {
-                    "key": "5a16b0005c143",
-                    "name": "section_maps",
-                    "label": "Maps",
+                "5a12f51001a2f": {
+                    "key": "5a12f51001a2f",
+                    "name": "section_posts",
+                    "label": "Posts",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5a16b00f5c144",
+                            "key": "field_5a12f52701a30",
                             "label": "Titel",
                             "name": "title",
                             "type": "text",
@@ -605,7 +658,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "50",
+                                "width": "",
                                 "class": "",
                                 "id": ""
                             },
@@ -616,31 +669,10 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5a16b53e9609c",
-                            "label": "Hoogte",
-                            "name": "height",
-                            "type": "number",
-                            "instructions": "Voer hier de hoogte in van de kaart.",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "50",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": 400,
-                            "placeholder": 400,
-                            "prepend": "",
-                            "append": "px",
-                            "min": "",
-                            "max": "",
-                            "step": 10
-                        },
-                        {
-                            "key": "field_5a16b724b12ff",
-                            "label": "Locaties",
-                            "name": "locations",
-                            "type": "repeater",
+                            "key": "field_5a12f53001a31",
+                            "label": "Subtitel",
+                            "name": "lead",
+                            "type": "text",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -649,69 +681,53 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "collapsed": "",
-                            "min": 0,
-                            "max": 0,
-                            "layout": "block",
-                            "button_label": "Voeg locatie toe",
-                            "sub_fields": [
-                                {
-                                    "key": "field_5a16b731b1300",
-                                    "label": "Titel",
-                                    "name": "title",
-                                    "type": "text",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "100",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": ""
-                                },
-                                {
-                                    "key": "field_5a16b73eb1301",
-                                    "label": "Lead",
-                                    "name": "lead",
-                                    "type": "textarea",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "50",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "maxlength": "",
-                                    "rows": "",
-                                    "new_lines": ""
-                                },
-                                {
-                                    "key": "field_5a16b749b1302",
-                                    "label": "Locatie",
-                                    "name": "location",
-                                    "type": "google_map",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "50",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "center_lat": "",
-                                    "center_lng": "",
-                                    "zoom": "",
-                                    "height": 250
-                                }
-                            ]
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5a12f56501a32",
+                            "label": "Category",
+                            "name": "taxonomy",
+                            "type": "taxonomy",
+                            "instructions": "Kies een categorie welke getoond moet worden.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "70",
+                                "class": "",
+                                "id": ""
+                            },
+                            "taxonomy": "category",
+                            "field_type": "select",
+                            "allow_null": 1,
+                            "add_term": 1,
+                            "save_terms": 0,
+                            "load_terms": 0,
+                            "return_format": "id",
+                            "multiple": 0
+                        },
+                        {
+                            "key": "field_5a12f5ff24a37",
+                            "label": "Aantal",
+                            "name": "amount",
+                            "type": "range",
+                            "instructions": "Kies het aantal berichten wat getoond moet worden.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "min": 1,
+                            "max": 4,
+                            "step": "",
+                            "prepend": "",
+                            "append": ""
                         }
                     ],
                     "min": "",
@@ -737,22 +753,8 @@
     "style": "seamless",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": [
-        "permalink",
-        "the_content",
-        "excerpt",
-        "custom_fields",
-        "discussion",
-        "comments",
-        "revisions",
-        "slug",
-        "author",
-        "format",
-        "categories",
-        "tags",
-        "send-trackbacks"
-    ],
+    "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1511441107
+    "modified": 1511774394
 }
