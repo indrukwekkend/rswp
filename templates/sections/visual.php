@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 $image = get_sub_field('image');
 $size = 'large';
@@ -16,15 +16,11 @@ $background = 'style="background-image:url('.$thumb.');"';
 
 <section class="visual" <?= $background; ?>>
 
-	<div class="container">
+	<div class="row">
 
-		<div class="row">
+		<div class="col-12">
 
-			<div class="col-12">
-
-				<!-- Hier kan eventueel nog content komen -->
-
-			</div>
+			<!-- Hier kan eventueel nog content komen -->
 
 		</div>
 

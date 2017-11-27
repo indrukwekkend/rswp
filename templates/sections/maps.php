@@ -5,30 +5,26 @@ $location = get_sub_field('location');
 ?>
 <section class="maps">
 
-	<div class="container-fluid">
+	<?php if(get_sub_field('title')): ?>
+		<div class="row">
+			<div class="col-12">
+				<h1><?php the_sub_field('title');?></h1>
+			</div>
+		</div>
 
-		<?php if(get_sub_field('title')): ?>
-			<div class="row">
-				<div class="col-12">
-					<h1><?php the_sub_field('title');?></h1>
+	<?php endif; ?>
+
+	<?php if( !empty($location) ): ?>
+
+		<div class="row">
+			<div class="col-12 p-0">
+				<div class="acf-map">
+					<div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
 				</div>
 			</div>
+		</div>
 
-		<?php endif; ?>
-
-		<?php if( !empty($location) ): ?>
-
-			<div class="row">
-				<div class="col-12 p-0">
-					<div class="acf-map">
-						<div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
-					</div>
-				</div>
-			</div>
-
-		<?php endif; ?>
-
-	</div>
+	<?php endif; ?>
 
 	<style type="text/css">.acf-map{width: 100%;height: <?php the_sub_field('height'); ?>px;}.acf-map img {max-width: inherit !important;}</style>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5QTXactMQKDZThuga9XwRtr5r1TC3fTs"></script>

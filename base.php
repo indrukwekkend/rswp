@@ -7,41 +7,51 @@ use Roots\Sage\Wrapper;
 
 <!doctype html>
 <html <?php language_attributes(); ?>>
-	<?php get_template_part('templates/head'); ?>
-		<body <?php body_class(); ?>>
-			<!--[if IE]>
-                <div class="alert alert-warning">
-                    <?php _e('Je gebruikt een <strong>verouderde</strong> browser. Doe elke ontwikkelaar een plezier en <a href="http://browsehappy.com/">installeer een recente browser</a>', 'sage'); ?>
-                </div>
-             <![endif]-->
-			<?php do_action('get_header'); ?>
 
-			<?php get_template_part('templates/header'); ?>
+  <?php get_template_part('templates/head'); ?>
 
-			<div class="clearfix">
+    <body <?php body_class(); ?>>
 
-				<main class="main" role="main">
+      <!--[if IE]>
+        <div class="alert alert-warning">
+          <?php _e('Je gebruikt een <strong>verouderde</strong> browser. Doe elke ontwikkelaar een plezier en <a href="http://browsehappy.com/">installeer een recente browser</a>', 'sage'); ?>
+        </div>
+      <![endif]-->
 
-					<?php include Wrapper\template_path(); ?>
+      <?php do_action('get_header'); ?>
 
-				</main><!-- /.main -->
+      <?php get_template_part('templates/header'); ?>
 
-				<?php if (Setup\display_sidebar()) : ?>
+      <div class="container">
 
-					<aside class="sidebar">
+        <div class="row">
 
-						<?php include Wrapper\sidebar_path(); ?>
+          <main class="col" role="main">
 
-					</aside><!-- /.sidebar -->
+            <?php include Wrapper\template_path(); ?>
 
-				<?php endif; ?>
+          </main><!-- /.main -->
 
-			</div>
+          <?php if (Setup\display_sidebar()) : ?>
 
-		<?php do_action('get_footer'); ?>
+            <aside class="col-4">
 
-		<?php get_template_part('templates/footer');?>
+              <?php include Wrapper\sidebar_path(); ?>
 
-		<?php wp_footer(); ?>
-	</body>
+            </aside><!-- /.sidebar -->
+
+          <?php endif; ?>
+
+        </div>
+
+      </div>
+
+    <?php do_action('get_footer'); ?>
+
+    <?php get_template_part('templates/footer');?>
+
+    <?php wp_footer(); ?>
+
+  </body>
+
 </html>

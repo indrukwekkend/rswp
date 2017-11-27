@@ -1,28 +1,23 @@
 <section class="featured">
 
-	<div class="container">
+	<div class="row py-3">
 
-		<div class="row py-3">
+		<?php if( have_rows('content') ) : ?>
 
-			<?php if( have_rows('content') ) : ?>
+			<?php while( have_rows('content') ) : the_row(); ?>
 
-				<?php while( have_rows('content') ) : the_row(); ?>
+				<div class="col-12 col-md">
 
-					<div class="col-12 col-md">
+					<h2><?php the_sub_field('title'); ?></h2>
 
-						<h2><?php the_sub_field('title'); ?></h2>
+					<?php the_sub_field('lead'); ?>
 
-						<?php the_sub_field('lead'); ?>
+				</div>
 
-					</div>
+			<?php endwhile; ?>
 
-				<?php endwhile; ?>
-
-			<?php endif;?>
-
-		</div>
+		<?php endif;?>
 
 	</div>
 
 </section>
-

@@ -1,26 +1,22 @@
 <section class="quote">
 
-	<div class="container">
+	<div class="row py-3 text-center">
 
-		<div class="row py-3 text-center">
+		<div class="col-12">
 
-			<div class="col-12">
+			<blockquote class="blockquote">
 
-				<blockquote class="blockquote">
+				<?php the_sub_field('content');?>
 
-					<?php the_sub_field('content');?>
+				<?php if( get_sub_field('source') ) : ?>
 
-					<?php if( get_sub_field('source') ) : ?>
+					<footer class="blockquote-footer">
+						<?php the_sub_field('source'); ?>
+					</footer>
 
-						<footer class="blockquote-footer">
-							<?php the_sub_field('source'); ?>
-						</footer>
+				<?php endif; ?>
 
-					<?php endif; ?>
-
-				</blockquote>
-
-			</div>
+			</blockquote>
 
 		</div>
 

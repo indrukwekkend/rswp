@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 $background = function($has_post_thumbnail){
 
@@ -20,49 +20,45 @@ $jumbotron = get_field('jumbotron');
 
 <section class="jumbotron jumbotron-fluid m-0 p-0" <?= $background( has_post_thumbnail() ); ?>>
 
-	<div class="container">
+	<?php if( $jumbotron['title'] or $jumbotron['lead'] or $jumbotron['cta']): ?>
 
-		<?php if( $jumbotron['title'] or $jumbotron['lead'] or $jumbotron['cta']): ?>
+		<div class="row py-5">
 
-			<div class="row py-5">
+			<div class="col-12 py-5">
 
-				<div class="col-12 py-5">
+				<?php if( $jumbotron['title'] ): ?>
 
-					<?php if( $jumbotron['title'] ): ?>
+					<h1 class="jumbotron-heading display-3 text-white">
+						<?= $jumbotron['title']; ?>
+					</h1>
 
-						<h1 class="jumbotron-heading display-3 text-white">
-							<?= $jumbotron['title']; ?>
-						</h1>
+				<?php endif; ?>
 
-					<?php endif; ?>
+				<?php if( $jumbotron['lead'] ): ?>
 
-					<?php if( $jumbotron['lead'] ): ?>
+					<div class="lead text-white">
+						<?= $jumbotron['lead'];?>
+					</div>
 
-						<div class="lead text-white">
-							<?= $jumbotron['lead'];?>
-						</div>
+				<?php endif; ?>
 
-					<?php endif; ?>
+				<?php if( $jumbotron['cta'] ): ?>
 
-					<?php if( $jumbotron['cta'] ): ?>
+					<div>
+						<?php foreach($jumbotron["cta"] as $cta ) :?>
 
-						<div>
-							<?php foreach($jumbotron["cta"] as $cta ) :?>
+							<?php $color = ($cta['color']) ? "btn-" . $cta['color'] : "btn-primary"; ?>
 
-								<?php $color = ($cta['color']) ? "btn-" . $cta['color'] : "btn-primary"; ?>
+							<a href="<?= $cta['url']; ?>" class="btn <?= $color; ?>"><?= $cta['label'] ?></a>
 
-								<a href="<?= $cta['url']; ?>" class="btn <?= $color; ?>"><?= $cta['label'] ?></a>
+						<?php endforeach; ?>
+					</div>
 
-							<?php endforeach; ?>
-						</div>
+				<?php endif; ?>
 
-					<?php endif; ?>
+			</div>
 
-				</div>
-
-			<?php endif; ?>
-
-		</div>
+		<?php endif; ?>
 
 	</div>
 

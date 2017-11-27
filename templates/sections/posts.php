@@ -1,80 +1,76 @@
 
 <?php
-$lead = get_sub_field('lead'); 
-$taxonomy = get_sub_field('taxonomy'); 
+$lead = get_sub_field('lead');
+$taxonomy = get_sub_field('taxonomy');
 $aantal = get_sub_field('amount');
 ?>
 
 
 <section class="posts">
 
-	<div class="container">
+	<div class="row">
 
-		<div class="row">
+		<div class="col-12 py-4 text-center">
 
-			<div class="col-12 py-4 text-center">
+			<h1 class="display-4"><?php the_sub_field('title'); ?></h1>
 
-				<h1 class="display-4"><?php the_sub_field('title'); ?></h1>
-
-				<p class="lead"><?php the_sub_field('lead'); ?></p>
-
-			</div>
+			<p class="lead"><?php the_sub_field('lead'); ?></p>
 
 		</div>
 
-		<div class="row">
+	</div>
 
-			<?php 
+	<div class="row">
 
-			$args = array(
-				'posts_per_page' =>  $aantal,
-				'tax_query' => array(
-				'relation' => 'AND',
-				array(
-					'taxonomy' => 'category',
-					'field' => 'id',
-					'terms' => array( $taxonomy )
-				)
-				)
-			);
+		<?php
 
-			$the_query = new WP_Query( $args );
+		$args = array(
+			'posts_per_page' =>  $aantal,
+			'tax_query' => array(
+			'relation' => 'AND',
+			array(
+				'taxonomy' => 'category',
+				'field' => 'id',
+				'terms' => array( $taxonomy )
+			)
+			)
+		);
 
-			?>
+		$the_query = new WP_Query( $args );
 
-				<?php if ( $the_query->have_posts() ): ?>
+		?>
 
-					<?php while ( $the_query->have_posts() ): ?>
+			<?php if ( $the_query->have_posts() ): ?>
 
-					<?php $the_query->the_post(); ?>
+				<?php while ( $the_query->have_posts() ): ?>
 
-						<div class="col-12 col-md-6 col-lg">
+				<?php $the_query->the_post(); ?>
 
-							<div class="card mb-4">
+					<div class="col-12 col-md-6 col-lg">
 
-								<div class="card-body">
+						<div class="card mb-4">
 
-									<h4 class="card-title"><?php the_title(); ?></h4>
+							<div class="card-body">
 
-									<h6 class="card-subtitle mb-2 text-muted"><?= get_the_date( get_option( 'date_format' ) );?></h6>
+								<h4 class="card-title"><?php the_title(); ?></h4>
 
-									<div class="card-text"><?php the_excerpt(); ?></div>
+								<h6 class="card-subtitle mb-2 text-muted"><?= get_the_date( get_option( 'date_format' ) );?></h6>
 
-									<a href="<?= get_post_permalink(); ?>" class="card-link">Lees verder</a>
+								<div class="card-text"><?php the_excerpt(); ?></div>
 
-								</div>
+								<a href="<?= get_post_permalink(); ?>" class="card-link">Lees verder</a>
 
 							</div>
 
 						</div>
 
-					<?php endwhile;?>
+					</div>
 
-				<?php wp_reset_postdata(); ?>
+				<?php endwhile;?>
 
-			<?php endif;?>
+			<?php wp_reset_postdata(); ?>
 
-		</div>
+		<?php endif;?>
 
 	</div>
 

@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 $reverser = ( get_sub_field( 'order' ) ) ? ' flex-row-reverse' : '';
 $image = get_sub_field('image');
@@ -15,59 +15,55 @@ $cta_group = get_sub_field('cta');
 
 <section class="featurette">
 
-	<div class="container">
+	<div class="row py-3 align-items-center<?= $reverser;?>">
 
-		<div class="row py-3 align-items-center<?= $reverser;?>">
+		<div class="col-md-7">
 
-			<div class="col-md-7">
+			<h2 class="display-4">
+				<?php the_sub_field('title'); ?>
+			</h2>
 
-				<h2 class="display-4">
-					<?php the_sub_field('title'); ?>
-				</h2>
+			<h3 class="mb-3">
+				<?php the_sub_field('lead'); ?>
+			</h3>
 
-				<h3 class="mb-3">
-					<?php the_sub_field('lead'); ?>
-				</h3>
+			<span class="lead">
+				<?php the_sub_field('content'); ?>
+			</span>
 
-				<span class="lead">
-					<?php the_sub_field('content'); ?>
-				</span>
+			<div class="mt-3">
 
-				<div class="mt-3">
+				<?php if( $cta_group ) : ?>
 
-					<?php if( $cta_group ) : ?>
+					<?php foreach($cta_group as $cta) : ?>
 
-						<?php foreach($cta_group as $cta) : ?>
+						<?php $color = ($cta['color']) ? "btn-" . $cta['color'] : "btn-primary" ;?>
 
-							<?php $color = ($cta['color']) ? "btn-" . $cta['color'] : "btn-primary" ;?>
+						<a class="btn <?= $color; ?>" href="<?= $cta['url']; ?>"><?= $cta['label']; ?></a>
 
-							<a class="btn <?= $color; ?>" href="<?= $cta['url']; ?>"><?= $cta['label']; ?></a>
+					<?php endforeach; ?>
 
-						<?php endforeach; ?>
-
-					<?php endif; ?>
-
-				</div>
+				<?php endif; ?>
 
 			</div>
 
-			<div class="col-md-5">
+		</div>
 
-				<figure class="figure">
+		<div class="col-md-5">
 
-					<img class="figure-img img-fluid" title="<?= $title; ?>" alt="<?= $alt; ?>" src="<?= $thumb; ?>" width="<?= $width; ?>" height="<?= $height; ?>" >
+			<figure class="figure">
 
-					<?php if( get_sub_field('caption') ) : ?>
+				<img class="figure-img img-fluid" title="<?= $title; ?>" alt="<?= $alt; ?>" src="<?= $thumb; ?>" width="<?= $width; ?>" height="<?= $height; ?>" >
 
-						<figcaption class="figure-caption">
-							<?php the_sub_field('caption'); ?>
-						</figcaption>
+				<?php if( get_sub_field('caption') ) : ?>
 
-					<?php endif; ?>
+					<figcaption class="figure-caption">
+						<?php the_sub_field('caption'); ?>
+					</figcaption>
 
-				</figure>
+				<?php endif; ?>
 
-			</div>
+			</figure>
 
 		</div>
 
