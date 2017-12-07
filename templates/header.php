@@ -1,5 +1,5 @@
 <header>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<nav class="navbar navbar-expand-lg navbar-light">
 		<div class="container">
 
 			<a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">
@@ -19,7 +19,7 @@
                     'container'         => 'div',
                     'container_class'   => 'collapse navbar-collapse',
                     'container_id'      => 'primary_navigation',
-                    'menu_class'        => 'nav navbar-nav mr-auto',
+                    'menu_class'        => 'nav navbar-nav ml-auto',
                     'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
                     'walker'            => new WP_Bootstrap_Navwalker()
                 )
