@@ -11,12 +11,12 @@ function register_cuztom_post_types() {
 	// https://codex.wordpress.org/Function_Reference/register_post_type
 
 	$name = 'book';
-	
+
 	$labels = [
 		'name' => _x( $name, 'Post Type General Name', 'sage' ),
 		'singular_name' => _x( $name , 'Post Type Singular Name', 'sage' ),
 	];
-	
+
 	$args = [
 		'label' => __( 'Post Type', 'sage' ),
 		'description' => __( 'Post Type Description', 'sage' ),
@@ -27,9 +27,9 @@ function register_cuztom_post_types() {
 		'menu_icon' => 'dashicons-category', // https://developer.wordpress.org/resource/dashicons
 	];
 	$book = register_cuztom_post_type( $name, $args );
-	
+
 	$book->addTaxonomy('merk');
 
 }
-add_action( 'init', __NAMESPACE__ . '\\register_cuztom_post_types' );
+//add_action( 'init', __NAMESPACE__ . '\\register_cuztom_post_types' );
 ?>
