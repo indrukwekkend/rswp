@@ -22,44 +22,48 @@ $jumbotron = get_field('jumbotron');
 
 	<?php if( $jumbotron['title'] or $jumbotron['lead'] or $jumbotron['cta']): ?>
 
-		<div class="row py-5">
+    <div class="container-fluid">
 
-			<div class="col-12 py-5">
+  		<div class="row py-5">
 
-				<?php if( $jumbotron['title'] ): ?>
+  			<div class="col-12 py-5">
 
-					<h1 class="jumbotron-heading display-3 text-white">
-						<?= $jumbotron['title']; ?>
-					</h1>
+  				<?php if( $jumbotron['title'] ): ?>
 
-				<?php endif; ?>
+  					<h1 class="jumbotron-heading display-3 text-white">
+  						<?= $jumbotron['title']; ?>
+  					</h1>
 
-				<?php if( $jumbotron['lead'] ): ?>
+  				<?php endif; ?>
 
-					<div class="lead text-white">
-						<?= $jumbotron['lead'];?>
-					</div>
+  				<?php if( $jumbotron['lead'] ): ?>
 
-				<?php endif; ?>
+  					<div class="lead text-white">
+  						<?= $jumbotron['lead'];?>
+  					</div>
 
-				<?php if( $jumbotron['cta'] ): ?>
+  				<?php endif; ?>
 
-					<div>
-						<?php foreach($jumbotron["cta"] as $cta ) :?>
+  				<?php if( $jumbotron['cta'] ): ?>
 
-							<?php $color = ($cta['color']) ? "btn-" . $cta['color'] : "btn-primary"; ?>
+  					<div>
+  						<?php foreach($jumbotron["cta"] as $cta ) :?>
 
-							<a href="<?= $cta['url']; ?>" class="btn <?= $color; ?>"><?= $cta['label'] ?></a>
+  							<?php $color = ($cta['color']) ? "btn-" . $cta['color'] : "btn-primary"; ?>
 
-						<?php endforeach; ?>
-					</div>
+  							<a href="<?= $cta['url']; ?>" class="btn <?= $color; ?>"><?= $cta['label'] ?></a>
 
-				<?php endif; ?>
+  						<?php endforeach; ?>
+  					</div>
 
-			</div>
+  				<?php endif; ?>
 
-		<?php endif; ?>
+  			</div>
 
-	</div>
+  		<?php endif; ?>
+
+  	</div>
+
+  </div>
 
 </section>
