@@ -1,0 +1,35 @@
+.posts{
+	.card-group{
+		.card{
+			border: 0;
+
+			.card-body{
+				padding: 0;
+
+				.card-title{
+					color: theme-color("secondary");
+					font-size: 1.2rem;
+					font-weight: bold;
+					text-transform: uppercase;
+					margin: .1rem;
+					min-height: 46px;
+				}
+				.card-meta{}
+				.card-text{
+					p{
+						font-size: .8rem;
+					}
+				}
+			}
+			.card-footer{
+				background: none;
+				border: 0;
+				padding: 0;
+
+				.card-link{
+					border-radius: 4rem;
+				}
+			}
+		}
+	}
+}
