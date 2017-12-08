@@ -27,9 +27,9 @@
 		<div class="col-12 text-center">
 			<p class="text-muted">
 				<small>
-					<i class="fa fa-phone text-secondary mr-1"></i><a href="tel:0299820130" title="Telefoonnummer van RSWP">0299 82 01 30</a>
-					<i class="fa fa-envelope text-secondary ml-2 mr-1"></i><a href="mailto:rswp.nl">info@rswp.nl</a>
-					<i class="fa fa-globe text-secondary ml-2 mr-1"></i><a href="/sitemap">sitemap</a>
+					<i class="fa fa-phone text-secondary mr-1"></i><a class="text-muted" href="tel:0299820130" title="Telefoonnummer van RSWP">0299 82 01 30</a>
+					<i class="fa fa-envelope text-secondary ml-2 mr-1"></i><a class="text-muted" href="mailto:rswp.nl">info@rswp.nl</a>
+					<i class="fa fa-globe text-secondary ml-2 mr-1"></i><a class="text-muted" href="/sitemap">sitemap</a>
 				</small>
 			</p>
 		</div>
