@@ -1,4 +1,31 @@
 <header>
+	<section class="topbar">
+		<div class="container">
+			<div class="row">
+				<div class="col-6">
+					<small>
+						<i class="fa fa-phone text-secondary mr-1"></i><a class="text-muted" href="tel:0299820130" title="Telefoonnummer van RSWP">0299 82 01 30</a>
+						<i class="fa fa-envelope text-secondary ml-2 mr-1"></i><a class="text-muted" href="mailto:rswp.nl">info@rswp.nl</a>
+						<i class="fa fa-lock text-secondary ml-2 mr-1"></i><a class="text-muted" href="/sitemap">sitemap</a>
+					</small>
+				</div>
+				<div class="col-6">
+					<form class="form-inline">
+						<div class="input-group input-group-sm ml-auto">
+							<span class="input-group-btn">
+								<button class="btn btn-secondary" type="button">Go!</button>
+							</span>
+							<input type="text" class="form-control" placeholder="Search for..." aria-label="Search for...">
+						</div>
+						<div class="ml-4">
+							<a href="#tw"><i class="fa fa-twitter"></i></a>
+							<a href="#fb"><i class="fa fa-facebook"></i></a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
 	<nav class="navbar navbar-expand-lg navbar-light">
 		<div class="container">
 
