@@ -732,6 +732,77 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "5a2aac6ecc992": {
+                    "key": "5a2aac6ecc992",
+                    "name": "section_services",
+                    "label": "Diensten",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a2aac6ecc993",
+                            "label": "Titel",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5a2aac6ecc994",
+                            "label": "Subtitel",
+                            "name": "lead",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5a2aac6ecc995",
+                            "label": "Diensten",
+                            "name": "services",
+                            "type": "relationship",
+                            "instructions": "Kies welke diensten er getoond moeten worden.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "70",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "service"
+                            ],
+                            "taxonomy": [],
+                            "filters": "",
+                            "elements": "",
+                            "min": "",
+                            "max": "",
+                            "return_format": "object"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Voeg sectie toe",
@@ -756,5 +827,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1511774394
+    "modified": 1512747172
 }
