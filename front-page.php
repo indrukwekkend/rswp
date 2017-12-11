@@ -1,5 +1,7 @@
 <?php // Gebruik dit bestand voor de voorpagina. ?>
 
+<?php use Roots\Sage\Assets; ?>
+
 <?php while (have_posts()) : the_post(); ?>
 
 	<section class="content">
@@ -31,9 +33,7 @@
 				<div class="kaart bg-primary text-white text-center py-3 px-2">
 					<h5 class="display-4">Wat doet RSWP in mijn omgeving?</h5>
 					<p>In elke buurt worden andere diensten aangeboden. Bekijk het hier.</p>
-					<canvas id="canvas" width="400" height="400">
-							Hier komt de kaart van RSWP.
-					</canvas>
+						<img src="<?= Assets\asset_path('images/kaart.png'); ?>" width="400" height="400">
 				</div>
 			</div>
 
