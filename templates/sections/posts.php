@@ -49,7 +49,6 @@ $the_query = new WP_Query( $args );
 	        <?php $the_query->the_post(); ?>
 
 
-
 	            <div class="card col-12 col-md-6 col-lg mb-4">
 
 	              <div class="card-body">
@@ -65,22 +64,8 @@ $the_query = new WP_Query( $args );
 	                </div>
 
 	                <div class="card-subtitle text-muted my-1 mt-auto">
-										<?php
-
-										$post_object = get_field('location');
-										$location = null;
-
-										if( $post_object ):
-											$post = $post_object;
-											setup_postdata( $post );
-
-											$location = get_the_title();
-
-											wp_reset_postdata();
-		 								endif;
-										?>
 	                  <small class="card-meta">
-											<i class="fa fa-map-marker mr-1 text-secondary"></i><?= $location; ?>
+											<i class="fa fa-map-marker mr-1 text-secondary"></i><?= get_the_title(get_field('location')); ?>
 											<i class="fa fa-clock-o text-secondary mx-1"></i><?= get_the_date( get_option( 'date_format' ) );?>
 										</small>
 	                </div>

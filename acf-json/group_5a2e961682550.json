@@ -1,0 +1,49 @@
+{
+    "key": "group_5a2e961682550",
+    "title": "Locatie Informatie",
+    "fields": [
+        {
+            "key": "field_5a2e961cbb61e",
+            "label": "Diensten",
+            "name": "services",
+            "type": "relationship",
+            "instructions": "Voer de diensten van deze locatie in.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "service"
+            ],
+            "taxonomy": [],
+            "filters": [
+                "search"
+            ],
+            "elements": "",
+            "min": "",
+            "max": "",
+            "return_format": "object"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "location"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1513003320
+}
