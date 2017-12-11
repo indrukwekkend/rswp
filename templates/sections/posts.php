@@ -41,61 +41,71 @@ $the_query = new WP_Query( $args );
   <div class="row">
 
     <?php if ( $the_query->have_posts() ): ?>
+
 			<div class="card-group">
-      <?php while ( $the_query->have_posts() ): ?>
 
-        <?php $the_query->the_post(); ?>
+			  <?php while ( $the_query->have_posts() ): ?>
 
-          <div class="col-12 col-md-6 col-lg">
+	        <?php $the_query->the_post(); ?>
 
-            <div class="card mb-4">
 
-              <div class="card-body">
 
-                <h4 class="card-title">
-                  <?php the_title(); ?>
-                </h4>
+	            <div class="card col-12 col-md-6 col-lg mb-4">
 
-                <p class="card-text text-muted">
-									<?php
+	              <div class="card-body">
 
-									$post_object = get_field('location');
-									$location = null;
+									<?php if( has_post_thumbnail() ):?>
 
-									if( $post_object ):
-										$post = $post_object;
-										setup_postdata( $post );
+										<img class="card-img-top border border-primary" src="<? the_post_thumbnail_url(); ?>" alt="<? the_title(); ?>">
 
-										$location = get_the_title();
+									<?php endif; ?>
 
-										wp_reset_postdata();
-	 								endif;
-									?>
-                  <small class="card-meta">
-										<i class="fa fa-map-marker mr-1 text-secondary"></i><?= $location; ?>
-										<i class="fa fa-clock-o text-secondary mx-1"></i><?= get_the_date( get_option( 'date_format' ) );?>
-									</small>
-                </p>
+	                <div class="card-title">
+	                  <span><?php the_title(); ?></span>
+	                </div>
 
-                <div class="card-text">
-                  <?php the_excerpt(); ?>
-                </div>
+	                <div class="card-subtitle text-muted my-1 mt-auto">
+										<?php
 
-              </div>
+										$post_object = get_field('location');
+										$location = null;
 
-              <div class="card-footer">
-                <a href="<?= get_post_permalink(); ?>" class="card-link btn btn-sm btn-outline-primary">Lees verder</a>
-              </div>
+										if( $post_object ):
+											$post = $post_object;
+											setup_postdata( $post );
 
-            </div>
+											$location = get_the_title();
 
-          </div>
+											wp_reset_postdata();
+		 								endif;
+										?>
+	                  <small class="card-meta">
+											<i class="fa fa-map-marker mr-1 text-secondary"></i><?= $location; ?>
+											<i class="fa fa-clock-o text-secondary mx-1"></i><?= get_the_date( get_option( 'date_format' ) );?>
+										</small>
+	                </div>
 
-        <?php endwhile;?>
+	                <div class="card-text">
+	                  <?php the_excerpt(); ?>
+	                </div>
+
+	              </div>
+
+	              <div class="card-footer">
+	                <a href="<?= get_post_permalink(); ?>" class="card-link btn btn-sm btn-outline-primary">Lees verder</a>
+	              </div>
+
+	            </div>
+
+
+
+	        <?php endwhile;?>
 
       <?php wp_reset_postdata(); ?>
-</div>
-    <?php endif;?>
+
+			</div>
+
+		<?php endif;?>
 
   </div>
 
