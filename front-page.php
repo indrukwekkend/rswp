@@ -27,9 +27,9 @@
 
 			</div>
 
-			<div class="col-6 px-5">
-				<div class="kaart bg-primary text-white text-center p-4">
-					<h4 class="display-4">Wat doet RSWP in mijn omgeving?</h4>
+			<div class="col-6 px-4">
+				<div class="kaart bg-primary text-white text-center py-3 px-2">
+					<h5 class="display-4">Wat doet RSWP in mijn omgeving?</h5>
 					<p>In elke buurt worden andere diensten aangeboden. Bekijk het hier.</p>
 					<canvas id="canvas" width="400" height="400">
 							Hier komt de kaart van RSWP.
