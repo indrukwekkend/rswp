@@ -1,31 +1,44 @@
+<?
+use Roots\Sage\Assets;
+?>
+
 <header>
+
 	<section class="topbar">
 		<div class="container">
-			<div class="row">
+			<div class="row align-items-center">
+
 				<div class="col-6">
 					<small>
-						<i class="fa fa-phone text-secondary mr-1"></i><a class="text-muted" href="tel:0299820130" title="Telefoonnummer van RSWP">0299 82 01 30</a>
-						<i class="fa fa-envelope text-secondary ml-2 mr-1"></i><a class="text-muted" href="mailto:rswp.nl">info@rswp.nl</a>
-						<i class="fa fa-lock text-secondary ml-2 mr-1"></i><a class="text-muted" href="/sitemap">sitemap</a>
+						<i class="fa fa-phone text-secondary mr-1"></i><a class="text-muted" href="tel:0299820130" title="Telefoonnummer van RSWP"><i>0299 82 01 30</i></a>
+						<i class="fa fa-envelope text-secondary ml-2 mr-1"></i><a class="text-muted" href="mailto:rswp.nl"><i>info@rswp.nl</i></a>
+						<i class="fa fa-lock text-secondary ml-2 mr-1"></i><a class="text-muted" href="/sitemap"><i>sitemap</i></a>
 					</small>
 				</div>
+
 				<div class="col-6">
-					<form class="form-inline">
+					<form class="form-inline my-1">
+
 						<div class="input-group input-group-sm ml-auto">
 							<span class="input-group-btn">
-								<button class="btn btn-secondary" type="button">Go!</button>
+								<button class="btn" type="button"><i class="fa fa-search"></i></button>
 							</span>
 							<input type="text" class="form-control" placeholder="Search for..." aria-label="Search for...">
 						</div>
-						<div class="ml-4">
-							<a href="#tw"><i class="fa fa-twitter"></i></a>
-							<a href="#fb"><i class="fa fa-facebook"></i></a>
+
+						<div class="ml-3">
+							<a class="mr-2" href="#tw"><i class="fa fa-twitter"></i></a>
+							<a class="mr-2" href="#fb"><i class="fa fa-facebook"></i></a>
+							<a href="#ANBI"><img src="<?= Assets\asset_path('images/anbi.jpg');?>" height="24"/></a>
 						</div>
+
 					</form>
 				</div>
+
 			</div>
 		</div>
 	</section>
+
 	<nav class="navbar navbar-expand-lg navbar-light">
 		<div class="container">
 
