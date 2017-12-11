@@ -6,7 +6,7 @@ $background = function($has_post_thumbnail){
 
         $url = get_the_post_thumbnail_url();
 
-        return 'style="background-image: url('.$url.');min-height:380px;"';
+        return 'style="background-image: url('.$url.');min-height:160px;"';
 
     endif;
 
@@ -60,7 +60,7 @@ $jumbotron = get_field('jumbotron');
 
   			</div>
 
-			<?php else: ?>
+			<?php elseif( is_home() ): ?>
 
 				<div class="container py-4">
 					<div class="row py-5">
