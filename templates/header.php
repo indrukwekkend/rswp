@@ -23,7 +23,7 @@ use Roots\Sage\Assets;
 							<span class="input-group-btn">
 								<button class="btn" type="button"><i class="fa fa-search"></i></button>
 							</span>
-							<input type="text" class="form-control" placeholder="Search for..." aria-label="Search for...">
+							<input type="text" class="form-control" placeholder="ZOEKEN..." aria-label="Search for...">
 						</div>
 
 						<div class="ml-3">

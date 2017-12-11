@@ -24,7 +24,7 @@ $the_query = new WP_Query( $args );
 
   <div class="row">
 
-    <div class="col-12 py-4 text-center">
+    <div class="col-12 pt-4 text-center">
 
       <h1 class="display-4">
         <?php the_sub_field('title'); ?>

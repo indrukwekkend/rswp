@@ -6,7 +6,7 @@ $background = function($has_post_thumbnail){
 
         $url = get_the_post_thumbnail_url();
 
-        return 'style="background-image: url('.$url.');min-height:320px;"';
+        return 'style="background-image: url('.$url.');min-height:380px;"';
 
     endif;
 
@@ -62,15 +62,15 @@ $jumbotron = get_field('jumbotron');
 
 			<?php else: ?>
 
-				<div class="container">
+				<div class="container py-4">
 					<div class="row py-5">
-						<div class="col-5 bg-secondary text-white">
-							<h2 class="display-4 text-center my-3">Zoek naar diensten</h2>
+						<div class="col-5 px-4 bg-secondary text-white">
+							<h2 class="display-4 text-center text-white my-3">Zoek naar diensten</h2>
 							<form>
 
 								<div class="form-group row">
-									<label for="input-locatie" class="col-3">Locatie</label>
-									<div class="col-9">
+									<label for="input-locatie" class="col-4"><i class="fa fa-map-marker text-primary mr-2"></i>LOCATIE</label>
+									<div class="col-8">
 										<select class="form-control" id="input-locatie">
 											<option selected>- kies locatie</option>
 											<option>2</option>
@@ -82,8 +82,8 @@ $jumbotron = get_field('jumbotron');
 								</div>
 
 								<div class="form-group row">
-									<label for="input-diensten" class="col-3">Diensten</label>
-									<div class="col-9">
+									<label for="input-diensten" class="col-4"><i class="fa fa-handshake-o text-primary mr-2"></i>DIENSTEN</label>
+									<div class="col-8">
 										<select class="form-control" id="input-diensten">
 											<option selected>- kies dienst</option>
 											<option>2</option>
