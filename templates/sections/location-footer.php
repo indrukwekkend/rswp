@@ -1,5 +1,5 @@
 <section class="container location-footer">
-	<div class="row">
+	<div class="row py-4">
 		<div class="col-12">
 			<h6 class="display-4 text-center">Actueel</h6>
 		</div>

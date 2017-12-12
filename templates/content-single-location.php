@@ -1,6 +1,6 @@
 <?php while (have_posts()) : the_post(); ?>
 	<section class="location-single">
-		<div class="row mt-5">
+		<div class="row mt-5 mb-4">
 			<div class="col-8">
 				<h6>WonenPlus <? the_title(); ?></h6>
 				<? the_content(); ?>
