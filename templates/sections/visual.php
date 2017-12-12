@@ -14,7 +14,7 @@ $background = 'style="background-image:url('.$thumb.');"';
 
 ?>
 
-<section class="visual" <?= $background; ?>>
+<section class="container-fluid visual" <?= $background; ?>>
 
 	<div class="row">
 

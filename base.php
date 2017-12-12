@@ -22,29 +22,38 @@ use Roots\Sage\Wrapper;
 
       <?php get_template_part('templates/header'); ?>
 
-      <div class="container">
+			<section class="primay">
 
-        <div class="row">
+	      <div class="container">
 
-          <main class="col" role="main">
+	        <div class="row">
 
-            <?php include Wrapper\template_path(); ?>
+	          <main class="col" role="main">
 
-          </main><!-- /.main -->
+	            <?php include Wrapper\template_path(); ?>
 
-          <?php if (Setup\display_sidebar()) : ?>
+	          </main><!-- /.main -->
 
-            <aside class="col-4">
+	          <?php if (Setup\display_sidebar()) : ?>
 
-              <?php include Wrapper\sidebar_path(); ?>
+	            <aside class="col-4">
 
-            </aside><!-- /.sidebar -->
+	              <?php include Wrapper\sidebar_path(); ?>
 
-          <?php endif; ?>
+	            </aside><!-- /.sidebar -->
 
-        </div>
+	          <?php endif; ?>
 
-      </div>
+	        </div>
+
+	      </div>
+			</section>
+
+			<section class="secondary">
+
+				<?php get_template_part('templates/content','secondary');?>
+
+			</section>
 
     <?php do_action('get_footer'); ?>
 

@@ -1,4 +1,4 @@
-<section class="brands">
+<section class="container brands">
 
 	<?php if( have_rows('brands') ) : ?>
 

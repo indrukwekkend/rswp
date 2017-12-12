@@ -1,4 +1,4 @@
-<section class="display">
+<section class="container display">
 
 	<div class="row py-3 text-center">
 

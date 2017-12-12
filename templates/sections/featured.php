@@ -1,4 +1,4 @@
-<section class="featured">
+<section class="container featured">
 
 	<div class="row py-3">
 

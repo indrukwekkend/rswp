@@ -13,7 +13,7 @@ $cta_group = get_sub_field('cta');
 
 ?>
 
-<section class="featurette">
+<section class="container featurette">
 
 	<div class="row py-3 align-items-center<?= $reverser;?>">
 

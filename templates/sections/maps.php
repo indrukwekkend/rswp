@@ -3,7 +3,7 @@
 $location = get_sub_field('location');
 
 ?>
-<section class="maps">
+<section class="container-fluid maps">
 
 	<?php if(get_sub_field('title')): ?>
 		<div class="row">

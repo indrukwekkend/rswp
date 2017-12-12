@@ -39,8 +39,6 @@
 
 		</div>
 	</section>
-
-	<?php get_template_part('templates/content','page');?>
 	<div class="mb-4"></div>
 
 <?php endwhile; ?>

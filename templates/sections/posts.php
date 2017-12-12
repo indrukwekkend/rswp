@@ -20,7 +20,7 @@ $the_query = new WP_Query( $args );
 ?>
 
 
-<section class="posts">
+<section class="container posts">
 
   <div class="row">
 

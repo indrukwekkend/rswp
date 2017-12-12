@@ -1,4 +1,4 @@
-<section class="quote">
+<section class="container quote">
 
 	<div class="row py-3 text-center">
 
