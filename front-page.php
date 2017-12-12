@@ -33,7 +33,7 @@
 				<div class="kaart text-white text-center py-3 px-2">
 					<h5 class="display-4 mb-1 text-white">Wat doet RSWP in mijn omgeving?</h5>
 					<p>In elke buurt worden andere diensten aangeboden. Bekijk het hier.</p>
-						<img src="<?= Assets\asset_path('images/kaart.png'); ?>" width="400" height="400">
+					<?php get_template_part('templates/front-page','map'); ?>
 				</div>
 			</div>
 
