@@ -60,7 +60,7 @@ $jumbotron = get_field('jumbotron');
 
   			</div>
 
-			<?php elseif( is_home() ): ?>
+			<?php elseif( is_front_page() ): ?>
 
 				<div class="container py-4">
 					<div class="row py-5">
