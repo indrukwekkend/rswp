@@ -70,7 +70,7 @@ use Roots\Sage\Assets;
 		</div>
 	</nav>
 
-	<?php if( is_front_page() or has_post_thumbnail() or is_page_template('template-jumbotron.php') ) : ?>
+	<?php if( is_front_page() or has_post_thumbnail() or is_page_template('template-jumbotron.php') or is_archive() or is_single() ) : ?>
 
 		<?php get_template_part('templates/sections/jumbotron'); ?>
 

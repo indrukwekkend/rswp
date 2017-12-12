@@ -15,7 +15,11 @@
 	.nav-item{
 		&.dropdown{
 			&.show{
-				background-color: $green;
+				background-color: theme-color("secondary");
+
+				.nav-link{
+					color: $white;
+				}
 			}
 		}
 	}
