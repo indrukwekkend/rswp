@@ -1,9 +1,9 @@
 <section class="contact-page">
 	<div class="row">
-		<div class="col-6">
+		<div class="col-7">
 			<? the_content(); ?>
 	</div>
-		<div class="col-6">
+		<div class="col-5">
 			<?= do_shortcode('[gravityform id="1" title="false" description="false"]'); ?>
 		</div>
 	</div>
