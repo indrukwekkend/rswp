@@ -91,22 +91,22 @@
                     "min": "",
                     "max": ""
                 },
-                "5a144c96221c3": {
-                    "key": "5a144c96221c3",
-                    "name": "test",
-                    "label": "Test",
+                "5a2fe0ba62846": {
+                    "key": "5a2fe0ba62846",
+                    "name": "section_content",
+                    "label": "Content",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5a144c9f221c4",
+                            "key": "field_5a2fe0ba62848",
                             "label": "Titel",
-                            "name": "titel",
+                            "name": "title",
                             "type": "text",
-                            "instructions": "",
+                            "instructions": "Voer hier de titel in. (max. 150 tekens)",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": "100",
                                 "class": "",
                                 "id": ""
                             },
@@ -114,31 +114,26 @@
                             "placeholder": "",
                             "prepend": "",
                             "append": "",
-                            "maxlength": ""
+                            "maxlength": 150
                         },
                         {
-                            "key": "field_5a144ca5221c5",
-                            "label": "Afbeelding",
-                            "name": "afbeelding",
-                            "type": "image",
-                            "instructions": "",
+                            "key": "field_5a2fe0ba62849",
+                            "label": "Tekst",
+                            "name": "lead",
+                            "type": "wysiwyg",
+                            "instructions": "Voer hier de tekst in. (max. 150 tekens)",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": "100",
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "array",
-                            "preview_size": "thumbnail",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": ""
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 1,
+                            "delay": 1
                         }
                     ],
                     "min": "",
@@ -817,6 +812,13 @@
                 "operator": "==",
                 "value": "page"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "location"
+            }
         ]
     ],
     "menu_order": 0,
@@ -827,5 +829,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1513078120
+    "modified": 1513088104
 }
