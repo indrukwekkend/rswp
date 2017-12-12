@@ -55,6 +55,8 @@ use Roots\Sage\Wrapper;
 
 			</section>
 
+		<?php get_template_part('templates/content','tertiary');?>
+
     <?php do_action('get_footer'); ?>
 
     <?php get_template_part('templates/footer');?>

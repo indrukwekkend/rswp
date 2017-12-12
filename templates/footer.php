@@ -1,3 +1,9 @@
+<?php if(is_singular('location')): ?>
+	<section class="location-footer">
+		<?php get_template_part('templates/sections/location','footer'); ?>
+	</section>
+<?php endif; ?>
+
 <footer class="container-fluid">
 
 	<div class="row">

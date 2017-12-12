@@ -21,7 +21,7 @@
 
 				<section class="locations">
 					<h6>Locaties</h6>
-					<?php $args = array('post_type' => 'location', 'orderby' => 'rand'); ?>
+					<?php $args = array('post_type' => 'location', 'orderby' => 'title', 'order' => 'ASC'); ?>
 					<?php $current_post_ID = $post->ID;?>
 					<?php $query = new wp_query( $args ); ?>
 					<?php if($query->have_posts()): ?>
@@ -29,9 +29,9 @@
 						<?php while( $query->have_posts() ) : ?>
 
 						<?php $query->the_post(); ?>
-						<?php $current = ($current_post_ID == $post->ID) ? 'badge-primary':'badge-secondary'; ?>
+						<?php $current = ($current_post_ID == $post->ID) ? 'btn-primary':'btn-secondary'; ?>
 
-							<span class="badge  <?= $current ?>"><? the_title(); ?></span>
+							<a class="btn  <?= $current ?> mb-2" href="<?= get_post_permalink(); ?>"><i><? the_title(); ?></i></a>
 
 						<?php endwhile; ?>
 
