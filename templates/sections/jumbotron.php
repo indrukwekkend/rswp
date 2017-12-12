@@ -66,31 +66,49 @@ $jumbotron = get_field('jumbotron');
 					<div class="row py-5">
 						<div class="col-5 px-4 bg-secondary text-white">
 							<h2 class="display-4 text-center text-white my-3">Zoek naar diensten</h2>
-							<form>
+							<form action="/services" method="get">
 
 								<div class="form-group row">
 									<label for="input-locatie" class="col-4"><i class="fa fa-map-marker text-primary mr-2"></i>LOCATIE</label>
 									<div class="col-8">
-										<select class="form-control" id="input-locatie">
-											<option selected>- kies locatie</option>
-											<option>2</option>
-											<option>3</option>
-											<option>4</option>
-											<option>5</option>
-										</select>
+										<?php $args = array('post_type' => 'location', 'orderby' => 'title', 'order' => 'ASC'); ?>
+										<?php $query = new wp_query( $args ); ?>
+
+										<?php if($query->have_posts()): ?>
+											<select class="form-control" id="input-locatie">
+												<option selected>- kies locatie</option>
+													<?php while( $query->have_posts() ) : ?>
+														<?php $query->the_post(); ?>
+
+														<option value="<?= $post->ID; ?>"><? the_title(); ?></option>
+
+													<?php endwhile; ?>
+													<?php wp_reset_postdata(); ?>
+													<?php wp_reset_query(); ?>
+												</select>
+											<?php endif; ?>
 									</div>
 								</div>
 
 								<div class="form-group row">
 									<label for="input-diensten" class="col-4"><i class="fa fa-handshake-o text-primary mr-2"></i>DIENSTEN</label>
 									<div class="col-8">
-										<select class="form-control" id="input-diensten">
-											<option selected>- kies dienst</option>
-											<option>2</option>
-											<option>3</option>
-											<option>4</option>
-											<option>5</option>
-										</select>
+										<?php $args = array('post_type' => 'service', 'orderby' => 'title', 'order' => 'ASC'); ?>
+										<?php $query = new wp_query( $args ); ?>
+
+										<?php if($query->have_posts()): ?>
+											<select class="form-control" id="input-diensten">
+												<option selected>- kies dienst</option>
+													<?php while( $query->have_posts() ) : ?>
+														<?php $query->the_post(); ?>
+
+														<option value="<?= $post->ID; ?>"><? the_title(); ?></option>
+
+													<?php endwhile; ?>
+													<?php wp_reset_postdata(); ?>
+													<?php wp_reset_query(); ?>
+												</select>
+											<?php endif; ?>
 									</div>
 								</div>
 
