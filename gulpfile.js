@@ -327,6 +327,6 @@ return gulp.src([
 ], {
  base: '.'
 })
-  .pipe(loadplugins.zip('creatego.zip'))
+  .pipe(loadplugins.zip('rswp.zip'))
   .pipe(gulp.dest('release'));
 });
