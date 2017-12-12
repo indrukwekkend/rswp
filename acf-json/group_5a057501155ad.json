@@ -1,6 +1,6 @@
 {
     "key": "group_5a057501155ad",
-    "title": "Pagina Inhoud",
+    "title": "Secties",
     "fields": [
         {
             "key": "field_5a0575228ede0",
@@ -829,5 +829,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1513088104
+    "modified": 1513093494
 }
