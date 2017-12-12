@@ -53,7 +53,7 @@ $jumbotron = get_field('jumbotron');
 
   							<?php $color = ($cta['color']) ? "btn-" . $cta['color'] : "btn-primary"; ?>
 
-  							<a href="<?= $cta['url']; ?>" class="btn <?= $color; ?>"><?= $cta['label'] ?></a>
+  							<a href="<?= $cta['url']; ?>" class="btn btn-radius <?= $color; ?>"><?= $cta['label'] ?></a>
 
   						<?php endforeach; ?>
   					</div>

@@ -77,7 +77,7 @@ $the_query = new WP_Query( $args );
 	              </div>
 
 	              <div class="card-footer">
-	                <a href="<?= get_post_permalink(); ?>" class="card-link btn btn-sm btn-outline-primary">Lees verder</a>
+	                <a href="<?= get_post_permalink(); ?>" class="card-link btn btn-radius btn-sm btn-outline-primary">Lees verder</a>
 	              </div>
 
 	            </div>

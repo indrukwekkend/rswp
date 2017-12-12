@@ -39,7 +39,7 @@ $cta_group = get_sub_field('cta');
 
 						<?php $color = ($cta['color']) ? "btn-" . $cta['color'] : "btn-primary" ;?>
 
-						<a class="btn <?= $color; ?>" href="<?= $cta['url']; ?>"><?= $cta['label']; ?></a>
+						<a class="btn btn-radius <?= $color; ?>" href="<?= $cta['url']; ?>"><?= $cta['label']; ?></a>
 
 					<?php endforeach; ?>
 

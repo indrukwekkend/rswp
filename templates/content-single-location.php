@@ -79,7 +79,7 @@
 		<?php endif;?>
 		<div class="row">
 			<div class="col-12 text-center my-2">
-				<a class="btn badge-pill badge-primary px-4" href="/services">BEKIJK ALLE DIENSTEN</a>
+				<a class="btn btn-radius btn-primary px-4" href="/services">BEKIJK ALLE DIENSTEN</a>
 			</div>
 		</div>
 	</section>
@@ -158,12 +158,10 @@
 			              </div>
 
 			              <div class="card-footer">
-			                <a href="<?= get_post_permalink(); ?>" class="card-link btn btn-sm btn-outline-primary">Lees verder</a>
+			                <a href="<?= get_post_permalink(); ?>" class="card-link btn btn-radius btn-sm btn-outline-primary">Lees verder</a>
 			              </div>
 
 			            </div>
-
-
 
 			        <?php endwhile;?>
 
