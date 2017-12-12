@@ -13,7 +13,7 @@ $sage_includes = [
 	'vendor/autoload.php',     // Autoload
 	'lib/assets.php',          // Scripts and stylesheets
 	'lib/extras.php',          // Custom functions
-	'lib/posts.php',          // Custom post types
+	'lib/posts.php',           // Custom post types
 	'lib/setup.php',           // Theme setup
 	'lib/titles.php',          // Page titles
 	'lib/wrapper.php',         // Theme wrapper class

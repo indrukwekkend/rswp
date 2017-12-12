@@ -6,7 +6,9 @@ $background = function($has_post_thumbnail){
 
         $url = get_the_post_thumbnail_url();
 
-        return 'style="background-image: url('.$url.');min-height:160px;"';
+				$min_height = (is_page('contact'))?'250px':'160px';
+
+        return 'style="background-image: url('.$url.');min-height:'.$min_height.';"';
 
     endif;
 
