@@ -17,14 +17,15 @@ Ga naar de map van het project (normaal: `/AMPPS-ROOT/www/creatego.dev/wp-conten
 
 In deze map voer je de volgende commandos uit:
 
-1. `npm install`
-2. `bower install`
-3. `gulp`
-4. `gulp watch`
+1. `npm install` voor de benodigde NPM pakketten
+2. `composer install` voor de `vendor` map plus benodigde PHP pakketten
+3. `bower install` voor alle Bower paketten
+4. `gulp` om het thema werkbaar te maken
+5. `gulp watch` om de default browser te starten op `localhost:3000`
 
 Nu start je browser op `localhost:3000` welke gelinkt is op `http://creatego.dev`.
 
-### Vereisten 
+### Vereisten
 
 #### Systeem
  * AMPPS 3.6 of hoger
@@ -38,5 +39,5 @@ Nu start je browser op `localhost:3000` welke gelinkt is op `http://creatego.dev
 ### Ontwikkelaars Info
 
 Dit thema gebruikt:
- - Roots/Sage 8.5.3 
+ - Roots/Sage 8.5.3
  - Bootstrap 4.0.0-beta
