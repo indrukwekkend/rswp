@@ -1,6 +1,6 @@
 {
     "key": "group_5a2fee15ebfdb",
-    "title": "Locatie (Diensten)",
+    "title": "Locaties (Diensten)",
     "fields": [
         {
             "key": "field_5a2fee15ee218",
@@ -45,5 +45,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "Reciprocal relation to 'service'",
-    "modified": 1513252609
+    "modified": 1513257323
 }
