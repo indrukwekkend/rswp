@@ -13,7 +13,7 @@ function title() {
       return __('Laatste berichten', 'sage');
     }
   } elseif (is_archive()) {
-    return get_the_archive_title();
+    return post_type_archive_title('', false);
   } elseif (is_search()) {
     return sprintf(__('Resultaten voor %s', 'sage'), get_search_query());
   } elseif (is_404()) {
