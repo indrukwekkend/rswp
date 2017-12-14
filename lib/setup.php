@@ -193,3 +193,12 @@ function add_bootstrap_container_class( $field_container, $field, $form, $css_cl
 	return '<li id="' . $field_id . '" class="' . $css_class . ' form-group">{FIELD_CONTENT}</li>';
 }
 add_filter( 'gform_field_container', __NAMESPACE__ . '\\add_bootstrap_container_class', 10, 6 );
+
+/*
+ * Load Google Fonts
+ */
+function load_google_fonts() {
+	wp_register_style('google-fonts', 'http://fonts.googleapis.com/css?family=' . 'Merriweather|Roboto|Work+Sans' );
+	wp_enqueue_style('google-fonts');
+}
+add_action( 'wp_head', __NAMESPACE__ . '\\load_google_fonts' , 1);
