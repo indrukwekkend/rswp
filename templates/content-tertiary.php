@@ -2,7 +2,7 @@
 	<section class="container content">
 		<div class="row my-5">
 			<div class="col-12 text-center">
-				<? the_field('secondary_content'); ?>
+				<? the_field('extra_content'); ?>
 			</div>
 		</div>
 	</section>
