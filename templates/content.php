@@ -36,7 +36,7 @@
 
 </article>
 
-<?php if( is_home() ): ?>
+<?php if( is_home() || is_archive() ): ?>
 	<?php if (($wp_query->current_post +1) != ($wp_query->post_count)): ?>
 		<hr>
 	<?php endif; ?>
