@@ -1,12 +1,12 @@
 {
     "key": "group_5a2ff97c82fed",
-    "title": "Extra Inhoud",
+    "title": "Extra Tekst",
     "fields": [
         {
-            "key": "field_5a2ff9841185b",
-            "label": "Titel",
-            "name": "secondary_title",
-            "type": "text",
+            "key": "field_5a328fb3d6a20",
+            "label": "Extra Teksten",
+            "name": "extra_toggle",
+            "type": "true_false",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,20 +15,28 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Aan",
+            "ui_off_text": "Uit"
         },
         {
             "key": "field_5a2ff9931185c",
             "label": "Inhoud",
-            "name": "secondary_content",
+            "name": "extra_content",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a328fb3d6a20",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -36,7 +44,7 @@
             },
             "default_value": "",
             "tabs": "all",
-            "toolbar": "basic",
+            "toolbar": "full",
             "media_upload": 1,
             "delay": 1
         }
@@ -58,5 +66,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1513093554
+    "modified": 1513265162
 }
