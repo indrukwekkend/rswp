@@ -1,13 +1,13 @@
 {
-    "key": "group_5a2fe532df296",
-    "title": "Diensten",
+    "key": "group_5a3265482f722",
+    "title": "Locaties (Vacatures)",
     "fields": [
         {
-            "key": "field_5a2fe6ed8ada6",
-            "label": "Diensten",
-            "name": "location_service",
+            "key": "field_5a32654831b7d",
+            "label": "Vacature locaties",
+            "name": "location_vacancy",
             "type": "relationship",
-            "instructions": "Diensten voor deze locatie.",
+            "instructions": "Kies de locatie(s) waarbij deze vacature hoort.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -16,7 +16,7 @@
                 "id": ""
             },
             "post_type": [
-                "service"
+                "location"
             ],
             "taxonomy": [],
             "filters": [
@@ -33,17 +33,17 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "location"
+                "value": "vacancy"
             }
         ]
     ],
-    "menu_order": 1,
+    "menu_order": 2,
     "position": "normal",
     "style": "seamless",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": 1,
-    "description": "Reciprocal relation to 'Location'",
-    "modified": 1513252652
+    "description": "Reciprocal relation to 'Vacancy'",
+    "modified": 1513252615
 }

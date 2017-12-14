@@ -1,13 +1,13 @@
 {
-    "key": "group_5a2fe532df296",
-    "title": "Diensten",
+    "key": "group_5a3266969c455",
+    "title": "Vacatures",
     "fields": [
         {
-            "key": "field_5a2fe6ed8ada6",
-            "label": "Diensten",
-            "name": "location_service",
+            "key": "field_5a326696a1eec",
+            "label": "Vacatures",
+            "name": "location_vacancy",
             "type": "relationship",
-            "instructions": "Diensten voor deze locatie.",
+            "instructions": "Vacatures voor deze locatie.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -16,7 +16,7 @@
                 "id": ""
             },
             "post_type": [
-                "service"
+                "vacancy"
             ],
             "taxonomy": [],
             "filters": [
@@ -45,5 +45,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "Reciprocal relation to 'Location'",
-    "modified": 1513252652
+    "modified": 1513252665
 }

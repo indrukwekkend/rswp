@@ -1,13 +1,13 @@
 {
     "key": "group_5a2fee15ebfdb",
-    "title": "Locatie",
+    "title": "Locatie (Diensten)",
     "fields": [
         {
             "key": "field_5a2fee15ee218",
             "label": "Locatie",
             "name": "location_service",
             "type": "relationship",
-            "instructions": "",
+            "instructions": "Kies de locatie(s) waarbij deze dienst hoort.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -35,16 +35,9 @@
                 "operator": "==",
                 "value": "service"
             }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "vacancy"
-            }
         ]
     ],
-    "menu_order": 1,
+    "menu_order": 2,
     "position": "normal",
     "style": "seamless",
     "label_placement": "top",
@@ -52,5 +45,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "Reciprocal relation to 'service'",
-    "modified": 1513093483
+    "modified": 1513252609
 }
