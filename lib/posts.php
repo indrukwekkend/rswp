@@ -56,7 +56,7 @@ function register_cuztom_post_types() {
 		'labels' => $labels,
 		'supports' => ['title', 'editor', 'thumbnail',],
 		'hierarchical' => false,
-		'menu_position' => 7, // 5 - below posts, 15 - below links, 20 - below pages, 25 - below comments, 60 below first seperator, 65 - below plugins, 70 - below users, 75 - below tools, 80 - below settings, 100 - below second seperator
+		'menu_position' => 9, // 5 - below posts, 15 - below links, 20 - below pages, 25 - below comments, 60 below first seperator, 65 - below plugins, 70 - below users, 75 - below tools, 80 - below settings, 100 - below second seperator
 		'menu_icon' => 'dashicons-location', // https://developer.wordpress.org/resource/dashicons
 	];
 	$post_type = register_cuztom_post_type( 'location', $args );
@@ -74,7 +74,7 @@ function register_cuztom_post_types() {
 		'labels' => $labels,
 		'supports' => ['title', 'editor', 'thumbnail',],
 		'hierarchical' => false,
-		'menu_position' => 8, // 5 - below posts, 15 - below links, 20 - below pages, 25 - below comments, 60 below first seperator, 65 - below plugins, 70 - below users, 75 - below tools, 80 - below settings, 100 - below second seperator
+		'menu_position' => 7, // 5 - below posts, 15 - below links, 20 - below pages, 25 - below comments, 60 below first seperator, 65 - below plugins, 70 - below users, 75 - below tools, 80 - below settings, 100 - below second seperator
 		'menu_icon' => 'dashicons-category', // https://developer.wordpress.org/resource/dashicons
 	];
 	$post_type = register_cuztom_post_type( 'service', $args );

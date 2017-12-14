@@ -1,33 +1,7 @@
 {
     "key": "group_5a3266969c455",
     "title": "Vacatures",
-    "fields": [
-        {
-            "key": "field_5a326696a1eec",
-            "label": "Vacatures",
-            "name": "location_vacancy",
-            "type": "relationship",
-            "instructions": "Vacatures voor deze locatie.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "post_type": [
-                "vacancy"
-            ],
-            "taxonomy": [],
-            "filters": [
-                "search"
-            ],
-            "elements": "",
-            "min": "",
-            "max": "",
-            "return_format": "object"
-        }
-    ],
+    "fields": false,
     "location": [
         [
             {
@@ -45,5 +19,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "Reciprocal relation to 'Location'",
-    "modified": 1513252665
+    "modified": 1513255726
 }
