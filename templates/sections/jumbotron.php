@@ -32,7 +32,7 @@ $jumbotron = get_field('jumbotron');
 
   				<?php if( $jumbotron['title'] ): ?>
 
-  					<h1 class="jumbotron-heading display-3 text-white">
+  					<h1 class="jumbotron-heading display-1 text-white">
   						<?= $jumbotron['title']; ?>
   					</h1>
 
@@ -67,7 +67,7 @@ $jumbotron = get_field('jumbotron');
 				<div class="container py-4">
 					<div class="row py-5">
 						<div class="col-5 px-4 bg-secondary text-white">
-							<h2 class="display-4 text-center text-white my-3">Zoek naar diensten</h2>
+							<h1 class="text-center text-white my-3">Zoek naar diensten</h1>
 							<form action="/services" method="get">
 
 								<div class="form-group row">
