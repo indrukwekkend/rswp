@@ -2,13 +2,12 @@
 	<section class="location-single">
 		<div class="row mt-5 mb-4">
 			<div class="col-8">
-				<h6>WonenPlus <? the_title(); ?></h6>
 				<? the_content(); ?>
 			</div>
 			<div class="col-4">
 				<section>
-					<h6>Formulieren</h6>
 					<?php if( have_rows('forms') ): ?>
+					<h1>Formulieren</h1>
 						<ul class="list-unstyled">
 							<?php while ( have_rows('forms') ) : the_row(); ?>
 
@@ -20,7 +19,7 @@
 				</section>
 
 				<section class="locations">
-					<h6>Locaties</h6>
+					<h1>Locaties</h1>
 					<?php $args = array('post_type' => 'location', 'orderby' => 'title', 'order' => 'ASC'); ?>
 					<?php $current_post_ID = $post->ID;?>
 					<?php $query = new wp_query( $args ); ?>
