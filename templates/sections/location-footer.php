@@ -35,38 +35,7 @@
 
 						<?php $the_query->the_post(); ?>
 
-								<div class="card col-12 col-md-6 col-lg mb-4">
-
-									<div class="card-body">
-
-										<?php if( has_post_thumbnail() ):?>
-
-											<img class="card-img-top border border-primary" src="<? the_post_thumbnail_url(); ?>" alt="<? the_title(); ?>">
-
-										<?php endif; ?>
-
-										<div class="card-title">
-											<span><?php the_title(); ?></span>
-										</div>
-
-										<div class="card-subtitle text-muted my-1 mt-auto">
-											<small class="card-meta">
-												<i class="fa fa-map-marker mr-1 text-secondary"></i><?= get_the_title(get_field('location')); ?>
-												<i class="fa fa-clock-o text-secondary mx-1"></i><?= get_the_date( get_option( 'date_format' ) );?>
-											</small>
-										</div>
-
-										<div class="card-text">
-											<?= wp_trim_words( get_the_excerpt(), 15, ' [..]'); ?>
-										</div>
-
-									</div>
-
-									<div class="card-footer">
-										<a href="<?= get_post_permalink(); ?>" class="card-link btn btn-radius btn-sm btn-outline-primary">Lees verder</a>
-									</div>
-
-								</div>
+						<?php get_template_part('templates/content'); ?>
 
 						<?php endwhile;?>
 

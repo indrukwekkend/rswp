@@ -41,6 +41,7 @@
 		</div>
 		<?php wp_reset_postdata(); ?>
 	<?php endif;?>
+
 	<div class="row pb-4">
 		<div class="col-12 text-center my-2">
 			<a class="btn btn-radius btn-primary px-4" href="/services">BEKIJK ALLE DIENSTEN</a>
