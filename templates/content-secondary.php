@@ -2,6 +2,10 @@
 	<?php get_template_part('templates/sections/location','services'); ?>
 <?php endif; ?>
 
+<?php if( is_singular('service') ) : ?>
+	<?php get_template_part('templates/sections/service','services'); ?>
+<?php endif; ?>
+
 <?php if( have_rows('sections') ) : ?>
 	<?php while( have_rows('sections') ) : the_row(); ?>
 
