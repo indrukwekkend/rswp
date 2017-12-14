@@ -1,7 +1,7 @@
 <?php if(is_singular('location') || is_singular('service')): ?>
 <?php $toggle_bg = (get_field('extra_toggle') == TRUE )?'bg-tint':'bg-white'; ?>
 	<section class="location-footer <?= $toggle_bg; ?>">
-		<?php get_template_part('templates/sections/location','footer'); ?>
+		<?php get_template_part('templates/footer','media'); ?>
 	</section>
 <?php endif; ?>
 

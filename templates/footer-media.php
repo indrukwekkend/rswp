@@ -1,11 +1,11 @@
 <section class="container location-footer">
 	<div class="row py-4">
 		<div class="col-12">
-			<h6 class="display-4 text-center">Actueel</h6>
+			<h1 class="text-center">Actueel</h1>
 		</div>
 
 		<div class="col-3">
-			<h6 class="text-center">ACTIVITEITEN</h6>
+			<h5><i class="fa fa-calendar text-primary"></i> ACTIVITEITEN</h5>
 			<?php $args = array('post_type' => 'activity'); ?>
 			<?php $current_post_ID = $post->ID;?>
 			<?php $query = new wp_query( $args ); ?>
@@ -47,7 +47,7 @@
 		</div>
 
 		<div class="col-3">
-			<h6 class="text-center">VACATURES</h6>
+			<h5><i class="fa fa-user text-primary"></i> VACATURES</h5>
 			<?php $args = array('post_type' => 'vacancy'); ?>
 			<?php $current_post_ID = $post->ID;?>
 			<?php $query = new wp_query( $args ); ?>
