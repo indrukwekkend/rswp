@@ -13,19 +13,28 @@
 				<?php setup_postdata($post); ?>
 
 				<div class="col-4">
-					<div class="row align-items-center">
-						<div class="col-4">
-							<?php if(has_post_thumbnail()): ?>
-								<img class="img-fluid" src="<? the_post_thumbnail_url(); ?>"/>
-							<?php else: ?>
-								<img class="img-fluid" src="http://placehold.it/180"/>
-							<?php endif; ?>
-						</div>
-						<div class="col-8">
+					<div class="media">
+						<?php $image = get_field('image'); ?>
+
+						<?php if( !empty($image) ): ?>
+
+						<?php
+						$url = $image['url'];
+						$title = $image['title'];
+						$alt = $image['alt'];
+						$caption = $image['caption'];
+						$thumb = $image['sizes']['thumbnail'];
+						?>
+
+							<img class="img-fluid align-self-center mr-3" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" />
+
+						<?php endif; ?>
+						<div class="media-body">
 							<div><b class="text-primary"><?php the_title(); ?></b></div>
-							<div><?= wp_trim_words( get_the_excerpt(), 15, ' [...] <a href="'.get_the_permalink().'">Lees meer</a>' ); ?></div>
+							<div><?= wp_trim_words( get_the_excerpt(), 15, ' <span class="text-nowrap">[...] <a href="'.get_the_permalink().'">Lees meer</a></span>' ); ?></div>
 						</div>
 					</div>
+
 				</div>
 
 			<?php endforeach; ?>
