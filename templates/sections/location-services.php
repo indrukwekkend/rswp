@@ -14,7 +14,7 @@
 
 				<div class="col-4 p-0">
 					<div class="media mb-3">
-						<?php $image = get_field('image'); ?>
+						<?php $image = get_field('icon'); ?>
 
 						<?php if( !empty($image) ): ?>
 

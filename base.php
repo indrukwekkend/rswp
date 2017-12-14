@@ -22,7 +22,7 @@ use Roots\Sage\Wrapper;
 
       <?php get_template_part('templates/header'); ?>
 
-			<section class="primay">
+			<section class="primary">
 
 	      <div class="container">
 
@@ -49,7 +49,7 @@ use Roots\Sage\Wrapper;
 	      </div>
 			</section>
 
-			<section class="secondary">
+			<section class="secondary bg-tint">
 
 				<?php get_template_part('templates/content','secondary');?>
 
