@@ -12,8 +12,8 @@
 			<?php foreach( $post_objects as $post): ?>
 				<?php setup_postdata($post); ?>
 
-				<div class="col-4">
-					<div class="media">
+				<div class="col-4 p-0">
+					<div class="media mb-3">
 						<?php $image = get_field('image'); ?>
 
 						<?php if( !empty($image) ): ?>
