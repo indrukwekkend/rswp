@@ -1,32 +1,7 @@
-.posts{
-	.card-group{
-		.card{
-			border: 0;
-
-			.card-body{
-				padding: 0;
-				display: flex;
-				flex-direction: column;
-
-				.card-title{
-					color: theme-color("secondary");
-					font-size: 1.15rem;
-					font-weight: bold;
-					line-height: 1.1;
-					text-transform: uppercase;
-				}
-				.card-meta{}
-				.card-text{
-					p{
-						font-size: .8rem;
-					}
-				}
-			}
-			.card-footer{
-				background: none;
-				border: 0;
-				padding: 0;
-			}
-		}
+.card{
+	.card-body{
+		padding: 0;
+		display: flex;
+		flex-direction: column;
 	}
 }
