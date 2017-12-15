@@ -1,6 +1,6 @@
 {
     "key": "group_5a327167dcde8",
-    "title": "Activiteiten",
+    "title": "Diensten, Vacatures en Activiteiten",
     "fields": [
         {
             "key": "field_5a2fe6ed8ada6",
@@ -24,7 +24,7 @@
             ],
             "elements": "",
             "min": "",
-            "max": "",
+            "max": 9,
             "return_format": "object"
         },
         {
@@ -95,5 +95,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "Reciprocal relation to 'Location'",
-    "modified": 1513255762
+    "modified": 1513346412
 }
