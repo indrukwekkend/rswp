@@ -1,6 +1,5 @@
 <h5><i class="fa fa-calendar text-primary"></i> ACTIVITEITEN</h5>
 <?php $args = array('post_type' => 'activity'); ?>
-<?php $current_post_ID = $post->ID;?>
 <?php $query = new wp_query( $args ); ?>
 <?php if($query->have_posts()): ?>
 	<ul class="list-unstyled activities-list">

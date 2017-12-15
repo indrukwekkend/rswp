@@ -1,9 +1,3 @@
-<?php
-// TODO: Optie inbouwen in de customizer zodat er gekozen kan worden tussen weergave modus:
-// Masonry, Grid, Lijst, Met/zonder afbeelding
-
-// Wordt ook gebruikt in section_posts.
-?>
 <article <?php post_class('card col-12 col-md-6 col-lg mb-4'); ?>>
 
 	<div class="card-body">

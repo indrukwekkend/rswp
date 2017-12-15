@@ -1,12 +1,11 @@
 <section class="interactive-map">
-<script>
-
-	jQuery(function() {
-		jQuery("path.area, g").click(function(e) {
-			window.location.href = '/location' + jQuery(this).data('info');
+	<script>
+		jQuery(function() {
+			jQuery("path.area, g").click(function(e) {
+				window.location.href = '/location' + jQuery(this).data('info');
+			});
 		});
-	});
-</script>
+	</script>
 
 <svg version="1.1" id="regio-map" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="510.236px" height="538.583px" viewBox="0 0 510.236 538.583" enable-background="new 0 0 510.236 538.583"

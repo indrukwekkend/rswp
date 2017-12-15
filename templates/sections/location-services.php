@@ -6,7 +6,7 @@
 		</div>
 	</div>
 
-	<?php $post_objects = get_field('services'); ?>
+	<?php $post_objects = get_field('location_service'); ?>
 	<?php if( $post_objects ): ?>
 		<div class="row">
 			<?php foreach( $post_objects as $post): ?>

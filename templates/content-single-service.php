@@ -20,7 +20,6 @@
 				$url = $image['url'];
 				$title = $image['title'];
 				$alt = $image['alt'];
-				$caption = $image['caption'];
 				?>
 
 					<img class="img-fluid" src="<?php echo $url; ?>" alt="<?php echo $alt; ?>" />

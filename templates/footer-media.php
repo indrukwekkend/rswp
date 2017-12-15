@@ -1,5 +1,6 @@
 <section class="container location-footer">
 	<div class="row py-4">
+
 		<div class="col-12">
 			<h1 class="text-center">Actueel</h1>
 		</div>
@@ -34,5 +35,6 @@
 		<div class="col-3">
 			<?php get_template_part('templates/sections/parts/vacancies','list'); ?>
 		</div>
+
 	</div>
 </section>
