@@ -1,26 +1,4 @@
 <section class="interactive-map">
-	<style>
-#regio-map{
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-path.area:hover, polygon:hover {
-  stroke: #a1c652 !important;
-  stroke-width:2px;
-  stroke-linejoin: round;
-  fill: #a1c652 !important;
-  cursor: pointer;
-}
-g path:hover{
-	display: none;
-	cursor: pointer;
-}
-g path{cursor: pointer;}
-</style>
-
 <script>
 
 	jQuery(function() {
@@ -28,7 +6,6 @@ g path{cursor: pointer;}
 			window.location.href = '/location' + jQuery(this).data('info');
 		});
 	});
-
 </script>
 
 <svg version="1.1" id="regio-map" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
