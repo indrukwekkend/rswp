@@ -47,3 +47,12 @@
 		}
 	}
 }
+
+.vacancies-list,
+.activities-list{
+	border-top: 2px solid theme-color("secondary");
+	border-bottom: 1px solid theme-color("secondary");
+	li{
+		border-bottom: 1px solid theme-color("secondary");
+	}
+}

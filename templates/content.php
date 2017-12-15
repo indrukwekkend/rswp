@@ -8,7 +8,7 @@
 
 	<div class="card-body">
 
-		<?php if( has_post_thumbnail() && ( is_singular('location') || is_front_page() ) ):?>
+		<?php if( has_post_thumbnail() && ( is_singular('location') || is_singular('service') || is_front_page() ) ):?>
 
 			<img class="card-img-top border border-primary mb-2" src="<? the_post_thumbnail_url(); ?>" alt="<? the_title(); ?>">
 
@@ -25,7 +25,8 @@
 		</div>
 
 		<div class="card-text mb-auto">
-			<?php the_excerpt(); ?>
+			<?php $limit = ( is_front_page() ) ? 50 : 18 ; ?>
+			<?= wp_trim_words( get_the_excerpt(), $limit, ' [...]' ); ?>
 		</div>
 
 	</div>
