@@ -204,3 +204,8 @@ function load_google_fonts() {
 
 }
 add_action( 'wp_head', __NAMESPACE__ . '\\load_google_fonts' , 1);
+
+/*
+ * Remove 'ACF: post2post' nag
+ */
+add_filter('remove_hube2_nag', '__return_true');
