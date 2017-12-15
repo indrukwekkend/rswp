@@ -11,6 +11,10 @@ h5,h6{
 
 .btn-secondary{
 	color: $white;
+
+	&:hover{
+		color: theme-color("primary");
+	}
 }
 
 .bg-tint{
