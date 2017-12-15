@@ -5,18 +5,16 @@
 		<?php if( !empty($image) ): ?>
 
 		<?php
-		$url = $image['url'];
 		$title = $image['title'];
 		$alt = $image['alt'];
-		$caption = $image['caption'];
 		$thumb = $image['sizes']['thumbnail'];
 		?>
-
-			<img class="img-fluid align-self-center mr-3" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" />
-
+			<a href="<?= get_the_permalink(); ?>">
+				<img class="img-fluid align-self-center mr-3" src="<?= $thumb; ?>" alt="<?= $alt; ?>" tile="<?= $title; ?>"/>
+			</a>
 		<?php endif; ?>
 		<div class="media-body">
-			<div><b class="text-primary"><?php the_title(); ?></b></div>
+			<div><a href="<?= get_the_permalink(); ?>"><b class="text-primary"><?php the_title(); ?></b></a></div>
 			<div><?= wp_trim_words( get_the_excerpt(), 15, ' <span class="text-nowrap">[...] <a href="'.get_the_permalink().'">Lees meer</a></span>' ); ?></div>
 		</div>
 	</div>
