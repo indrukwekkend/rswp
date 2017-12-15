@@ -27,7 +27,30 @@
     // Home page
     'home': {
       init: function() {
-        // JavaScript to be fired on the home page
+				$('#input-location').on('change', function() {
+					$.ajax({
+						method: "POST",
+						dataType: "json",
+						url: "/wp-content/themes/rswp/xhr/get_location_services.php",
+						data: { locatie: this.value }
+					}).done(function( msg ) {
+
+						$("#input-service").prop('disabled', false);
+
+						var newOptions = msg ;
+
+						var $el = $("#input-service");
+						$el.empty();
+						$.each(newOptions, function(key,value) {
+							$el.append($("<option></option>").attr("value", value).text(key));
+						});
+					});
+				});
+
+				$('#input-service').on('change', function() {
+					$("#input-submit").prop('disabled', false);
+					$('#service_search_form').attr('action',"/services/"+this.value);
+				});
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
