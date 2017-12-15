@@ -1,4 +1,4 @@
-<section class="interactive-map">
+<section class="interactive-map d-none d-md-block">
 	<script>
 		jQuery(function() {
 			jQuery("path.area, g").click(function(e) {

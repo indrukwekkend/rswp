@@ -7,7 +7,7 @@
 	<section class="content">
 		<div class="row">
 
-			<div class="col-6 pt-5 pr-5">
+			<div class="col-12 col-md-6 pt-5 pr-5 d-none d-md-block">
 
 				<div class="row">
 					<div class="col-12">
@@ -17,11 +17,11 @@
 
 				<div class="row">
 
-					<div class="col-6">
+					<div class="col-12 col-sm-6">
 						<a class="btn btn-block btn-primary text-script" href="/services">bekijk alle diensten</a>
 					</div>
 
-					<div class="col-6">
+					<div class="col-12 col-sm-6">
 						<a class="btn btn-block btn-secondary text-script" href="/word-abonnee">word abonnee</a>
 					</div>
 
@@ -29,7 +29,7 @@
 
 			</div>
 
-			<div class="col-6">
+			<div class="col-12 col-md-6">
 				<div class="kaart text-center py-3 px-2">
 					<h1 class="mb-1 text-white">Wat doet RSWP in mijn omgeving?</h1>
 					<p class="text-white text-script">In elke buurt worden andere diensten aangeboden. Bekijk het hier.</p>
