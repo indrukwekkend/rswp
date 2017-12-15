@@ -10,7 +10,7 @@
 
 		<?php if( has_post_thumbnail() && ( is_singular('location') || is_front_page() ) ):?>
 
-			<img class="card-img-top border border-primary mb-1" src="<? the_post_thumbnail_url(); ?>" alt="<? the_title(); ?>">
+			<img class="card-img-top border border-primary mb-2" src="<? the_post_thumbnail_url(); ?>" alt="<? the_title(); ?>">
 
 		<?php endif; ?>
 
@@ -24,7 +24,7 @@
 			</small>
 		</div>
 
-		<div class="card-text">
+		<div class="card-text mb-auto">
 			<?php the_excerpt(); ?>
 		</div>
 

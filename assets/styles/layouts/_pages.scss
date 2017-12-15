@@ -32,10 +32,10 @@
 				margin: 0 auto;
 			}
 			path.area:hover, polygon:hover {
-			  stroke: #a1c652 !important;
+			  stroke: theme-color("secondary") !important;
 			  stroke-width:2px;
 			  stroke-linejoin: round;
-			  fill: #a1c652 !important;
+			  fill: theme-color("secondary") !important;
 			  cursor: pointer;
 			}
 			g path:hover{

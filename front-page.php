@@ -7,7 +7,7 @@
 	<section class="content">
 		<div class="row">
 
-			<div class="col-6 pt-5">
+			<div class="col-6 pt-5 pr-5">
 
 				<div class="row">
 					<div class="col-12">
@@ -29,10 +29,10 @@
 
 			</div>
 
-			<div class="col-6 px-4">
-				<div class="kaart text-white text-center py-3 px-2">
+			<div class="col-6">
+				<div class="kaart text-center py-3 px-2">
 					<h1 class="mb-1 text-white">Wat doet RSWP in mijn omgeving?</h1>
-					<p>In elke buurt worden andere diensten aangeboden. Bekijk het hier.</p>
+					<p class="text-white text-script">In elke buurt worden andere diensten aangeboden. Bekijk het hier.</p>
 					<?php get_template_part('templates/front-page','map'); ?>
 				</div>
 			</div>
