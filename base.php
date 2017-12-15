@@ -49,7 +49,7 @@ use Roots\Sage\Wrapper;
 	      </div>
 			</section>
 
-			<section class="secondary bg-tint">
+			<section class="secondary bg-ivory">
 
 				<?php get_template_part('templates/content','secondary');?>
 
