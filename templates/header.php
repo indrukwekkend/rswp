@@ -43,8 +43,7 @@ use Roots\Sage\Assets;
 		<div class="container">
 
 			<a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">
-				<img class="brand" src="<?= Assets\asset_path('images/logo.svg');?>" height="32"/>
-				<div class="bloginfo"><?= bloginfo('description'); ?></div>
+				<img class="brand" src="<?= Assets\asset_path('images/logo.svg');?>"/>
 			</a>
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primary_navigation" aria-controls="primary_navigation" aria-expanded="false" aria-label="<?php _e('Wissel navigatie', 'sage');?>">
