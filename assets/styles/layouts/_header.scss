@@ -4,39 +4,49 @@
 	border-radius: 0 !important;
 }
 
-.nav{
-	.nav-link{
-		text-transform: uppercase !important;
-		font-size: .8rem;
-		padding-left: 1.1rem !important;
-		padding-right: 1.1rem !important;
+.navbar{
+
+	.bloginfo{
+		font-size: .6rem;
+		line-height: 1;
+		padding-left: 80px;
+		white-space: nowrap!important;
 	}
 
-	.nav-item{
-		&.dropdown{
-			&.show{
-				background-color: theme-color("secondary");
+	.nav{
+		.nav-link{
+			text-transform: uppercase !important;
+			font-size: .8rem;
+			padding-left: 1.1rem !important;
+			padding-right: 1.1rem !important;
+		}
 
-				.nav-link{
-					color: $white;
+		.nav-item{
+			&.dropdown{
+				&.show{
+					background-color: theme-color("secondary");
+
+					.nav-link{
+						color: $white;
+					}
 				}
 			}
 		}
-	}
-	.dropdown-menu{
-		background-color: theme-color("secondary");
-		border: none;
-		border-radius: 0;
-		min-width: 100%;
-		margin-top: 0;
-		text-align: center;
-		padding-top: 0;
+		.dropdown-menu{
+			background-color: theme-color("secondary");
+			border: none;
+			border-radius: 0;
+			min-width: 100%;
+			margin-top: 0;
+			text-align: center;
+			padding-top: 0;
 
-		.dropdown-item{
-			color: $white;
-			font-size: .8rem;
-			text-transform: uppercase !important;
-			padding: 0 .2rem;
+			.dropdown-item{
+				color: $white;
+				font-size: .8rem;
+				text-transform: uppercase !important;
+				padding: 0 .2rem;
+			}
 		}
 	}
 }
