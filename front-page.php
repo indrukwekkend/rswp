@@ -18,11 +18,11 @@
 				<div class="row">
 
 					<div class="col-6">
-						<a class="btn btn-block btn-primary" href="#">bekijk alle diensten</a>
+						<a class="btn btn-block btn-primary text-script" href="#">bekijk alle diensten</a>
 					</div>
 
 					<div class="col-6">
-						<a class="btn btn-block btn-secondary" href="#">word abonnee</a>
+						<a class="btn btn-block btn-secondary text-script" href="#">word abonnee</a>
 					</div>
 
 				</div>
