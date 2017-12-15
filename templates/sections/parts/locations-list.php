@@ -1,5 +1,7 @@
 <section class="locations">
-	<h1>Locaties</h1>
+	<?php if(!is_front_page()): ?>
+		<h1>Locaties</h1>
+	<?php endif; ?>
 	<?php $args = array('post_type' => 'location', 'orderby' => 'title', 'order' => 'ASC'); ?>
 	<?php $current_post_ID = $post->ID;?>
 	<?php $query = new wp_query( $args ); ?>

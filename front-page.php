@@ -34,6 +34,11 @@
 					<h1 class="mb-1 text-white">Wat doet RSWP in mijn omgeving?</h1>
 					<p class="text-white text-script">In elke buurt worden andere diensten aangeboden. Bekijk het hier.</p>
 					<?php get_template_part('templates/front-page','map'); ?>
+
+					<section class="d-block d-md-none">
+						<?php get_template_part('templates/sections/parts/locations','list'); ?>
+					</section>
+
 				</div>
 			</div>
 
