@@ -147,7 +147,7 @@ function register_required_plugins() {
             'force_deactivation' => true,
         ),
 				array(
-            'name'               => 'Advanced Custom Fields: Post2Post Addon',
+            'name'               => 'Advanced Custom Fields: Post2Post Add-on',
             'slug'               => 'post-2-post-for-acf',
             'required'           => true,
             'force_activation'   => true,
