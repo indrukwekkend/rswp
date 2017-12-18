@@ -41,5 +41,9 @@
 			<?php get_template_part('templates/sections/content'); ?>
 		<?php endif;?>
 
+		<?php if( get_row_layout() == 'section_form' ): ?>
+			<?php get_template_part('templates/sections/gravityform'); ?>
+		<?php endif;?>
+
 	<?php endwhile;?>
 <?php endif;?>
