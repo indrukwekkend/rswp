@@ -31,9 +31,9 @@
 
 			<div class="col-12 col-md-6">
 				<div class="kaart text-center py-3 px-2">
-					<h1 class="mb-1 text-white">Wat doet RSWP in mijn omgeving?</h1>
-					<p class="text-white text-script">In elke buurt worden andere diensten aangeboden. Bekijk het hier.</p>
-					<?php get_template_part('templates/front-page','map'); ?>
+					<h1 class="mb-1 text-white mb-3 mb-md-0">Wat doet RSWP in mijn omgeving?</h1>
+					<p class="text-white text-script d-none d-md-block">In elke buurt worden andere diensten aangeboden. Bekijk het hier.</p>
+					<?php get_template_part('templates/sections/interactive','map'); ?>
 
 					<section class="d-block d-md-none">
 						<?php get_template_part('templates/sections/parts/locations','list'); ?>

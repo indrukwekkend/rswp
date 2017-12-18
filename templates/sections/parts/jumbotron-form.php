@@ -8,9 +8,9 @@
 
 				<div class="form-group row">
 
-					<label for="input-location" class="col-4"><i class="fa fa-map-marker text-primary mr-2"></i>LOCATIE</label>
+					<label for="input-location" class="col-5 col-sm-4"><i class="fa fa-map-marker text-primary mr-2"></i>LOCATIE</label>
 
-					<div class="col-8">
+					<div class="col">
 						<?php $args = array('post_type' => 'location', 'orderby' => 'title', 'order' => 'ASC'); ?>
 						<?php $query = new wp_query( $args ); ?>
 
@@ -32,9 +32,9 @@
 
 				<div class="form-group row">
 
-					<label for="input-service" class="col-4"><i class="fa fa-handshake-o text-primary mr-2"></i>DIENSTEN</label>
+					<label for="input-service" class="col-5 col-sm-4"><i class="fa fa-handshake-o text-primary mr-2"></i>DIENSTEN</label>
 
-					<div class="col-8">
+					<div class="col">
 						<?php $args = array('post_type' => 'service', 'orderby' => 'title', 'order' => 'ASC'); ?>
 						<?php $query = new wp_query( $args ); ?>
 
