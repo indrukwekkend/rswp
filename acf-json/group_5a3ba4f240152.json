@@ -1,0 +1,45 @@
+{
+    "key": "group_5a3ba4f240152",
+    "title": "Forum",
+    "fields": [
+        {
+            "key": "field_5a3ba4fe89789",
+            "label": "Forum URL",
+            "name": "forum_url",
+            "type": "page_link",
+            "instructions": "Kies hier het forum.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "forum"
+            ],
+            "taxonomy": [],
+            "allow_null": 1,
+            "allow_archives": 0,
+            "multiple": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "location"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1513858414
+}
