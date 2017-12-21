@@ -1,6 +1,6 @@
 {
     "key": "group_5a12e5f8f0c18",
-    "title": "Jumbotron Inhoud",
+    "title": "Jumbotron",
     "fields": [
         {
             "key": "field_5a0d9f501fa8a",
@@ -149,7 +149,7 @@
             {
                 "param": "post_template",
                 "operator": "==",
-                "value": "template-jumbotron.php"
+                "value": "default"
             }
         ],
         [
@@ -168,5 +168,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1512654808
+    "modified": 1513853645
 }

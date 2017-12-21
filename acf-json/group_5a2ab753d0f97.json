@@ -7,7 +7,7 @@
             "label": "Locatie",
             "name": "location",
             "type": "post_object",
-            "instructions": "",
+            "instructions": "Kies de locatie waarbij deze dienst hoort.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -42,5 +42,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1513257665
+    "modified": 1513853485
 }
