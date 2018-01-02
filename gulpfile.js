@@ -320,6 +320,7 @@ return gulp.src([
    'vendor/**/*',
    'lang/*',
    'lib/**/*',
+	 'xhr/*',
    '*.css',
    '*.md',
    '*.php',
