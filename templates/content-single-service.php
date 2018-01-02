@@ -1,5 +1,5 @@
 <?php while (have_posts()) : the_post(); ?>
-	<section class="location-single">
+	<section class="service-single">
 		<div class="row mt-5 mb-4">
 
 			<div class="col-5">

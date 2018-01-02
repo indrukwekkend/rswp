@@ -1,13 +1,13 @@
 {
-    "key": "group_5a2ab753d0f97",
-    "title": "Bericht Locatie",
+    "key": "group_5a3ba4f240152",
+    "title": "Forum",
     "fields": [
         {
-            "key": "field_5a2ab76158e1f",
-            "label": "Locatie",
-            "name": "location",
-            "type": "post_object",
-            "instructions": "Kies de locatie waarbij deze dienst hoort.",
+            "key": "field_5a3ba4fe89789",
+            "label": "Forum URL",
+            "name": "forum_url",
+            "type": "page_link",
+            "instructions": "Kies hier het forum.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -16,13 +16,12 @@
                 "id": ""
             },
             "post_type": [
-                "location"
+                "forum"
             ],
             "taxonomy": [],
-            "allow_null": 0,
-            "multiple": 0,
-            "return_format": "id",
-            "ui": 1
+            "allow_null": 1,
+            "allow_archives": 0,
+            "multiple": 0
         }
     ],
     "location": [
@@ -30,11 +29,11 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "post"
+                "value": "location"
             }
         ]
     ],
-    "menu_order": 0,
+    "menu_order": 1,
     "position": "side",
     "style": "default",
     "label_placement": "top",
@@ -42,5 +41,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1513853485
+    "modified": 1513858414
 }

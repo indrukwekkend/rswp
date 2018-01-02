@@ -12,7 +12,7 @@
 
 				<?php get_template_part('templates/sections/parts/uploads','list'); ?>
 
-				<?php get_template_part('templates/sections/parts/locations','list'); ?>
+				<?php get_template_part('templates/sections/parts/locations','address'); ?>
 
 			</div>
 		</div>

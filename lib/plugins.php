@@ -39,8 +39,15 @@ function register_required_plugins() {
             'force_deactivation' => true,
         ),
 				array(
-            'name'               => 'Yoast SEO',
-            'slug'               => 'wordpress-seo',
+						'name'               => 'yoast SEO',
+						'slug'               => 'wordpress-seo',
+						'required'           => true,
+						'force_activation'   => true,
+						'force_deactivation' => true,
+				),
+				array(
+            'name'               => 'bbPress',
+            'slug'               => 'bbpress',
             'required'           => true,
             'force_activation'   => true,
             'force_deactivation' => true,
