@@ -17,13 +17,13 @@ use Roots\Sage\Assets;
 				</div>
 
 				<div class="col-6">
-					<form class="form-inline my-1">
+					<form class="form-inline my-1" action="/" method="get">
 
 						<div class="input-group input-group-sm ml-auto">
 							<span class="input-group-btn">
 								<button class="btn" type="button"><i class="fa fa-search"></i></button>
 							</span>
-							<input type="text" class="form-control" placeholder="ZOEKEN..." aria-label="Search for...">
+							<input type="search" name="s" class="form-control" placeholder="ZOEKEN..." aria-label="Zoeken naar...">
 						</div>
 
 						<div class="ml-3">
