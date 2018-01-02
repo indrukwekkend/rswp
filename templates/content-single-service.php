@@ -7,7 +7,7 @@
 				<?php get_template_part('templates/sections/parts/service','locations'); ?>
 			</div>
 
-			<div class="col-3">
+			<div class="col">
 				<?php $image = get_field('image'); ?>
 
 				<?php if( !empty($image) ): ?>
@@ -23,9 +23,6 @@
 				<?php endif; ?>
 			</div>
 
-			<div class="col-4">
-				<?php get_template_part('templates/sections/parts/locations','list'); ?>
-			</div>
 		</div>
 
 	</section>
