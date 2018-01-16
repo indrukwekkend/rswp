@@ -7,10 +7,12 @@
  * PHP 7 of hoger
 
 #### Plugins
+* [Gravityforms](http://gravityforms.com/)
+* [Yoast SEO](http://yoast.com/)
+* [BBpress](http://bbpress.org/)
 * [Advanced Custom Fields](https://www.advancedcustomfields.com/)
 * [Advanced Custom Fields: Post2Post Add-on](https://wordpress.org/plugins/post-2-post-for-acf/)
 * [Advanced Custom Fields: Gravityforms Add-on](https://wordpress.org/plugins/acf-gravityforms-add-on/)
-* [Gravityforms](http://gravityforms.com/)
 
 
 ### Packages
