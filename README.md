@@ -1,30 +1,6 @@
-[![Build Status](https://travis-ci.org/odil-io/rswp.svg?branch=master)](https://travis-ci.org/odil-io/rswp)
-[![Dependency Status](https://img.shields.io/david/odil-io/rswp.svg)](https://david-dm.org/odil-io/rswp#info=Dependencies)
+[![Made By Indrukwekkend](https://img.shields.io/badge/Made%20By-Indrukwekkend-ef7b31.svg)]
 
-# Het RSWP Thema
-
-### Snel Start
-
-Zorg ervoor dat AMPPS een domein heeft draaien op `rswp.dev`.
-Dit is nodig omdat `gulp` is ingesteld op `http://rswp.dev/`. Verander je dit dan sloop je het voor andere contributors van dit project.
-
-Zorg ervoor dat het domein op AMPPS  WordPress 4.8 of hoger heeft geinstalleerd.
-
-Ga naar de map van het project (normaal: `/AMPPS-ROOT/www/rswp.dev/wp-content/themes/rswp`)
-
-In deze map voer je de volgende commandos uit:
-
-1. `npm install` voor de benodigde NPM pakketten
-2. `composer install` voor de `vendor` map plus benodigde PHP pakketten
-3. `bower install` voor alle Bower paketten
-4. `gulp` om het thema werkbaar te maken
-5. `gulp watch` om de default browser te starten op `localhost:3000`
-
-Optioneel, gebruik `sh start` om bovengenoemde commandos geautomatiseerd uit te voeren.
-
-Nu start je browser op `localhost:3000` welke gelinkt is op `http://rswp.dev`.
-
-### Vereisten
+# Het RSWP WordPress thema
 
 #### Systeem
  * AMPPS 3.6 of hoger
@@ -37,11 +13,9 @@ Nu start je browser op `localhost:3000` welke gelinkt is op `http://rswp.dev`.
 * [Gravityforms](http://gravityforms.com/)
 
 
-### Ontwikkelaars Info
-
-Dit thema gebruikt:
- - Roots/Sage 8.5.3
- - Bootstrap 4.0.0-beta
- - [Bootstrap Navwalker](https://github.com/wp-bootstrap/wp-bootstrap-navwalker)
- - [TGMPA](https://github.com/TGMPA/TGM-Plugin-Activation/)
- - [Cuztom](http://github.com/gizburdt/cuztom/)
+### Packages
+ * Roots/Sage 8.5.3
+ * [Font Awesome ^4.7.0](https://fontawesome.com/)
+ * [Bootstrap Navwalker](https://github.com/wp-bootstrap/wp-bootstrap-navwalker)
+ * [TGMPA ^2.6](https://github.com/TGMPA/TGM-Plugin-Activation/)
+ * [Cuztom ^3.1](http://github.com/gizburdt/cuztom/)
