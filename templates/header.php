@@ -12,7 +12,6 @@ use Roots\Sage\Assets;
 					<small>
 						<i class="fa fa-phone text-secondary mr-1"></i><a class="text-muted" href="tel:0299820130" title="Telefoonnummer van RSWP"><i>0299 82 01 30</i></a>
 						<i class="fa fa-envelope text-secondary ml-2 mr-1"></i><a class="text-muted" href="mailto:rswp.nl"><i>info@rswp.nl</i></a>
-						<i class="fa fa-lock text-secondary ml-2 mr-1"></i><a class="text-muted" href="/log-in"><i>log in</i></a>
 					</small>
 				</div>
 
@@ -27,8 +26,7 @@ use Roots\Sage\Assets;
 						</div>
 
 						<div class="ml-3">
-							<a class="mr-2" href="#tw"><i class="fa fa-twitter"></i></a>
-							<a class="mr-2" href="#fb"><i class="fa fa-facebook"></i></a>
+							<a class="mr-2" href="https://www.facebook.com/RegionaleStichtingWonenPlus/"><i class="fa fa-facebook"></i></a>
 							<a href="#ANBI"><img src="<?= Assets\asset_path('images/anbi.jpg');?>" height="24"/></a>
 						</div>
 
