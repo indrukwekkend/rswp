@@ -20,6 +20,7 @@ var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
 var loadplugins  = require('gulp-load-plugins')();
+var OSHome       = require('os').homedir();
 
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('./assets/manifest.json');
@@ -330,5 +331,5 @@ return gulp.src([
  base: '.'
 })
   .pipe(loadplugins.zip('rswp.zip'))
-  .pipe(gulp.dest('release'));
+  .pipe(gulp.dest( OSHome + '/Documents/Releases'));
 });
