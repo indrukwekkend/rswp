@@ -155,3 +155,17 @@ add_action( 'wp_head', __NAMESPACE__ . '\\load_google_fonts' , 1);
  * Remove 'ACF: post2post' nag
  */
 add_filter('remove_hube2_nag', '__return_true');
+
+function login_logo() { ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+            background-image: url(<?= Assets\asset_path('images/logo.png'); ?>);
+		height:65px;
+		width:320px;
+		background-size: 320px 65px;
+		background-repeat: no-repeat;
+        	padding-bottom: 30px;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', __NAMESPACE__ . '\\login_logo' );

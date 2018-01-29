@@ -7,6 +7,7 @@
             "label": "Formulieren\/Bestanden",
             "name": "forms",
             "type": "repeater",
+            "value": null,
             "instructions": "Upload de formulieren en\/of bestanden voor deze locatie.",
             "required": 0,
             "conditional_logic": 0,
@@ -26,6 +27,7 @@
                     "label": "Titel",
                     "name": "title",
                     "type": "text",
+                    "value": null,
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -45,6 +47,7 @@
                     "label": "Bestand",
                     "name": "file",
                     "type": "file",
+                    "value": null,
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -58,6 +61,26 @@
                     "min_size": "",
                     "max_size": "",
                     "mime_types": "pdf, doc"
+                },
+                {
+                    "key": "field_5a6f25f292024",
+                    "label": "URL",
+                    "name": "url",
+                    "type": "text",
+                    "value": null,
+                    "instructions": "Voer hier een link in. Indien leeg zal het bestandsveld gebruikt worden op de pagina",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 }
             ]
         }
@@ -86,5 +109,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "Uploads for 'Locations'",
-    "modified": 1513853558
+    "modified": 1517233700
 }

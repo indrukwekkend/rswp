@@ -1,3 +1,5 @@
+<?php use Roots\Sage\Assets; ?>
+
 <article <?php post_class('card col-12 col-md-6 col-lg mb-4'); ?>>
 
 	<div class="card-body">
@@ -6,13 +8,21 @@
 
 			<img class="card-img-top border border-primary mb-2" src="<? the_post_thumbnail_url(); ?>" alt="<? the_title(); ?>">
 
-		<?php endif; ?>
+    <?php else: ?>
+
+      <?php if( !is_archive() ): ?>
+
+        <img class="card-img-top border border-primary mb-2" src="<?= Assets\asset_path('images/post-default.jpg'); ?>" alt="<? the_title(); ?>">
+
+      <?php endif; ?>
+
+    <?php endif; ?>
 
 		<div class="card-title mb-1">
 			<h5 class="m-0"><?php the_title(); ?></h5>
 		</div>
 
-		<div class="card-subtitle text-muted my-1 mt-auto">
+		<div class="card-subtitle my-1 mt-auto">
 			<small class="card-meta">
 				<?php get_template_part('templates/entry-meta'); ?>
 			</small>

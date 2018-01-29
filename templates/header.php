@@ -10,8 +10,8 @@ use Roots\Sage\Assets;
 
 				<div class="col-6">
 					<small>
-						<i class="fa fa-phone text-secondary mr-1"></i><a class="text-muted" href="tel:0299820130" title="Telefoonnummer van RSWP"><i>0299 82 01 30</i></a>
-						<i class="fa fa-envelope text-secondary ml-2 mr-1"></i><a class="text-muted" href="mailto:rswp.nl"><i>info@rswp.nl</i></a>
+						<i class="fa fa-phone text-secondary mr-1"></i><a class="text-black" href="tel:0299820130" title="Telefoonnummer van RSWP">0299 82 01 30</a>
+						<i class="fa fa-envelope text-secondary ml-2 mr-1"></i><a class="text-black" href="mailto:rswp.nl" title="Mailen naar RSWP">info@rswp.nl</a>
 					</small>
 				</div>
 

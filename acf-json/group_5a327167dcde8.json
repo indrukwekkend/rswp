@@ -3,10 +3,51 @@
     "title": "Diensten, Vacatures en Activiteiten",
     "fields": [
         {
+            "key": "field_5a6f236b0051c",
+            "label": "Diensten titel",
+            "name": "service_title",
+            "type": "text",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a6f23e6178b3",
+            "label": "Diensten Ondertitel",
+            "name": "service_lead",
+            "type": "text",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5a2fe6ed8ada6",
             "label": "Diensten",
             "name": "location_service",
             "type": "relationship",
+            "value": null,
             "instructions": "Diensten voor deze locatie.",
             "required": 0,
             "conditional_logic": 0,
@@ -24,7 +65,7 @@
             ],
             "elements": "",
             "min": "",
-            "max": 9,
+            "max": "",
             "return_format": "object"
         },
         {
@@ -32,6 +73,7 @@
             "label": "Vacatures",
             "name": "location_vacancy",
             "type": "relationship",
+            "value": null,
             "instructions": "Vacatures voor deze locatie.",
             "required": 0,
             "conditional_logic": 0,
@@ -57,6 +99,7 @@
             "label": "Activiteiten",
             "name": "location_activity",
             "type": "relationship",
+            "value": null,
             "instructions": "Activiteiten voor deze locatie.",
             "required": 0,
             "conditional_logic": 0,
@@ -95,5 +138,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "Reciprocal relation to 'Location'",
-    "modified": 1513852496
+    "modified": 1517233216
 }

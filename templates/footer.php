@@ -36,11 +36,11 @@
 	<div class="row">
 		<div class="col-12 text-center">
 			<h1 class="d-block d-md-none mt-3">Contact</h1>
-			<p class="text-muted my-2">
+			<p class="my-2">
 				<small>
-					<span class="d-block d-md-inline mb-2 mb-md-0"><i class="fa fa-phone text-secondary mr-1"></i><a class="text-muted" href="tel:0299820130" title="Telefoonnummer van RSWP">0299 82 01 30</a></span>
-					<span class="d-block d-md-inline mb-2 mb-md-0"><i class="fa fa-envelope text-secondary ml-2 mr-1"></i><a class="text-muted" href="mailto:rswp.nl">info@rswp.nl</a></span>
-					<span class="d-block d-md-inline"><i class="fa fa-globe text-secondary ml-2 mr-1"></i><a class="text-muted" href="/sitemap">sitemap</a></span>
+					<span class="d-block d-md-inline mb-2 mb-md-0"><i class="fa fa-phone text-secondary mr-1"></i><a href="tel:0299820130" title="Telefoonnummer van RSWP">0299 82 01 30</a></span>
+					<span class="d-block d-md-inline mb-2 mb-md-0"><i class="fa fa-envelope text-secondary ml-2 mr-1"></i><a href="mailto:rswp.nl">info@rswp.nl</a></span>
+					<span class="d-block d-md-inline"><i class="fa fa-globe text-secondary ml-2 mr-1"></i><a href="/sitemap">sitemap</a></span>
 				</small>
 			</p>
 		</div>

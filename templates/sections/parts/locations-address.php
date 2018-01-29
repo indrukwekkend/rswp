@@ -16,5 +16,4 @@ $email = get_field('email');
 	<?php if(get_field('forum_url')): ?>
 			<a class="btn btn-primary mt-3 text-script" href="<?php the_field('forum_url'); ?>"><i>RSWP <? the_title(); ?> Forum</i></a>
 	<?php endif; ?>
-	<div class="mb-3"></div>
 </section>
