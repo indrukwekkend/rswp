@@ -7,7 +7,6 @@
             "label": "Type Locatie",
             "name": "location_type",
             "type": "button_group",
-            "value": null,
             "instructions": "Geef hier aan of dit een \"Kenniscentrum\"-locatie betreft",
             "required": 0,
             "conditional_logic": 0,
@@ -21,7 +20,7 @@
                 "location": "Locatie"
             },
             "allow_null": 0,
-            "default_value": "",
+            "default_value": "location",
             "layout": "horizontal",
             "return_format": "value"
         }
@@ -43,5 +42,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1517309571
+    "modified": 1517317767
 }

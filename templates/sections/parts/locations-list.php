@@ -2,7 +2,7 @@
 	<?php if(!is_front_page()): ?>
 		<h1>Locaties</h1>
 	<?php endif; ?>
-	<?php $args = array('post_type' => 'location', 'orderby' => 'title', 'order' => 'ASC'); ?>
+	<?php $args = array('post_type' => 'location', 'orderby' => 'title', 'order' => 'ASC', 'meta_key' => 'location_type', 'meta_value'	=> 'location'); ?>
 	<?php $current_post_ID = $post->ID;?>
 	<?php $query = new wp_query( $args ); ?>
 	<?php if($query->have_posts()): ?>
