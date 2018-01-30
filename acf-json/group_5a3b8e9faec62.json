@@ -172,13 +172,13 @@
             }
         ]
     ],
-    "menu_order": 0,
+    "menu_order": 2,
     "position": "side",
-    "style": "default",
+    "style": "seamless",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": 1,
     "description": "Address for 'Locations'",
-    "modified": 1517238013
+    "modified": 1517309980
 }

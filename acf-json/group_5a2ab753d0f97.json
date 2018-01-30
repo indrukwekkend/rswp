@@ -1,12 +1,30 @@
 {
     "key": "group_5a2ab753d0f97",
     "title": "Bericht Locatie",
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
     "fields": [
         {
             "key": "field_5a2ab76158e1f",
             "label": "Locatie",
             "name": "location",
             "type": "post_object",
+            "value": null,
             "instructions": "Kies de locatie waarbij deze dienst hoort.",
             "required": 0,
             "conditional_logic": 0,
@@ -25,22 +43,5 @@
             "ui": 1
         }
     ],
-    "location": [
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "post"
-            }
-        ]
-    ],
-    "menu_order": 0,
-    "position": "side",
-    "style": "default",
-    "label_placement": "top",
-    "instruction_placement": "label",
-    "hide_on_screen": "",
-    "active": 1,
-    "description": "",
-    "modified": 1513853485
+    "modified": 1517308965
 }

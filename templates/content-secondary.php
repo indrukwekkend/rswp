@@ -1,4 +1,4 @@
-<?php if( is_singular('location') || is_singular('service') ) : ?>
+<?php if( ( is_singular('location') || is_singular('service') ) and !is_single('kenniscentrum-mantelzorg') ) : ?>
 	<?php get_template_part('templates/sections/parts/services','list'); ?>
 <?php endif; ?>
 

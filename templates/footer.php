@@ -1,4 +1,4 @@
-<?php if(is_singular('location') || is_singular('service')): ?>
+<?php if( ( is_singular('location') || is_singular('service') ) and !is_single('kenniscentrum-mantelzorg') ): ?>
 
 	<?php $toggle_bg = (get_field('extra_toggle') == TRUE )?'bg-ivory':'bg-white'; ?>
 

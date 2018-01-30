@@ -1,0 +1,47 @@
+{
+    "key": "group_5a704ae149983",
+    "title": "Kennis-item",
+    "fields": [
+        {
+            "key": "field_5a704ae88c699",
+            "label": "Kennis-item",
+            "name": "knowledgeitem",
+            "type": "button_group",
+            "value": null,
+            "instructions": "Geef hier aan of dit een \"Kennis Centrum\"-item is",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "knowledge": "Kennis",
+                "service": "Dienst"
+            },
+            "allow_null": 0,
+            "default_value": "service",
+            "layout": "horizontal",
+            "return_format": "value"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "service"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "side",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1517314453
+}

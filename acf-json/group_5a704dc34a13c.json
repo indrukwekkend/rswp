@@ -1,14 +1,14 @@
 {
-    "key": "group_5a6f245a88995",
-    "title": "Openingstijden",
+    "key": "group_5a704dc34a13c",
+    "title": "Kenniscentrum",
     "fields": [
         {
-            "key": "field_5a6f24649e3ff",
-            "label": "Openingstijden",
-            "name": "opening_hours",
-            "type": "textarea",
+            "key": "field_5a704dea9b0ba",
+            "label": "Type Locatie",
+            "name": "location_type",
+            "type": "button_group",
             "value": null,
-            "instructions": "",
+            "instructions": "Geef hier aan of dit een \"Kenniscentrum\"-locatie betreft",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -16,11 +16,14 @@
                 "class": "",
                 "id": ""
             },
+            "choices": {
+                "knowledgecenter": "Kenniscentrum",
+                "location": "Locatie"
+            },
+            "allow_null": 0,
             "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
+            "layout": "horizontal",
+            "return_format": "value"
         }
     ],
     "location": [
@@ -34,11 +37,11 @@
     ],
     "menu_order": 0,
     "position": "side",
-    "style": "default",
+    "style": "seamless",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1517233302
+    "modified": 1517309571
 }

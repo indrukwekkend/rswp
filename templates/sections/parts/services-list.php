@@ -38,12 +38,12 @@
   <section class="container services">
     <div class="row py-4">
       <div class="col-12 text-center">
-        <h1>Diensten WonenPlus</h1>
-        <p>WonenPlus biedt een aantal diensten aan zodat u zo lang mogelijk prettig thuis kunt blijven wonen.</p>
+        <h1><?php the_field('service_title'); ?></h1>
+        <p><?php the_field('service_lead'); ?></p>
       </div>
     </div>
 
-    <?php $args = array('post_type' => 'service', 'posts_per_page' => 9); ?>
+    <?php $args = array('post_type' => 'service', 'posts_per_page' => 9,'meta_key' => 'knowledgeitem', 'meta_value'	=> 'service'); ?>
     <?php $query = new wp_query( $args ); ?>
     <?php if($query->have_posts()): ?>
       <div class="row">

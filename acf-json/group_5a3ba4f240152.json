@@ -7,6 +7,7 @@
             "label": "Forum URL",
             "name": "forum_url",
             "type": "page_link",
+            "value": null,
             "instructions": "Kies hier het forum.",
             "required": 0,
             "conditional_logic": 0,
@@ -33,13 +34,13 @@
             }
         ]
     ],
-    "menu_order": 1,
+    "menu_order": 3,
     "position": "side",
-    "style": "default",
+    "style": "seamless",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1513858414
+    "modified": 1517309633
 }

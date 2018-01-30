@@ -169,3 +169,10 @@ function login_logo() { ?>
     </style>
 <?php }
 add_action( 'login_enqueue_scripts', __NAMESPACE__ . '\\login_logo' );
+
+
+function posts_link_attributes() {
+    return 'class="btn btn-primary"';
+}
+add_filter('next_posts_link_attributes', __NAMESPACE__ . '\\posts_link_attributes');
+add_filter('previous_posts_link_attributes', __NAMESPACE__ . '\\posts_link_attributes');

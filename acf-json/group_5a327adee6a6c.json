@@ -1,12 +1,31 @@
 {
     "key": "group_5a327adee6a6c",
     "title": "Dienst Afbeeldingen",
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "service"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1517308964,
     "fields": [
         {
             "key": "field_5a327ae78a2ae",
             "label": "Icoon",
             "name": "icon",
             "type": "image",
+            "value": null,
             "instructions": "Kies het icoon wat bij deze dienst hoort.",
             "required": 0,
             "conditional_logic": 0,
@@ -31,6 +50,7 @@
             "label": "Afbeelding",
             "name": "image",
             "type": "image",
+            "value": null,
             "instructions": "Kies een afbeelding voor naast de tekst.",
             "required": 0,
             "conditional_logic": 0,
@@ -50,23 +70,5 @@
             "max_size": "",
             "mime_types": "png"
         }
-    ],
-    "location": [
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "service"
-            }
-        ]
-    ],
-    "menu_order": 0,
-    "position": "side",
-    "style": "default",
-    "label_placement": "top",
-    "instruction_placement": "label",
-    "hide_on_screen": "",
-    "active": 1,
-    "description": "",
-    "modified": 1513853452
+    ]
 }

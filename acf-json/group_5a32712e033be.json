@@ -1,12 +1,31 @@
 {
     "key": "group_5a32712e033be",
     "title": "Locaties (Activiteiten)",
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "activity"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "Reciprocal relation to 'Activity'",
+    "modified": 1517308965,
     "fields": [
         {
             "key": "field_5a32712e0bb0a",
             "label": "Activiteit locaties",
             "name": "location_activity",
             "type": "relationship",
+            "value": null,
             "instructions": "Kies de locatie(s) waarbij deze activiteit hoort.",
             "required": 0,
             "conditional_logic": 0,
@@ -27,23 +46,5 @@
             "max": "",
             "return_format": "object"
         }
-    ],
-    "location": [
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "activity"
-            }
-        ]
-    ],
-    "menu_order": 2,
-    "position": "normal",
-    "style": "seamless",
-    "label_placement": "top",
-    "instruction_placement": "label",
-    "hide_on_screen": "",
-    "active": 1,
-    "description": "Reciprocal relation to 'Activity'",
-    "modified": 1513852502
+    ]
 }

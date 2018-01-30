@@ -1,12 +1,31 @@
 {
     "key": "group_5a3265482f722",
     "title": "Locaties (Vacatures)",
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "vacancy"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "Reciprocal relation to 'Vacancy'",
+    "modified": 1517308965,
     "fields": [
         {
             "key": "field_5a32654831b7d",
             "label": "Vacature locaties",
             "name": "location_vacancy",
             "type": "relationship",
+            "value": null,
             "instructions": "Kies de locatie(s) waarbij deze vacature hoort.",
             "required": 0,
             "conditional_logic": 0,
@@ -27,23 +46,5 @@
             "max": "",
             "return_format": "object"
         }
-    ],
-    "location": [
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "vacancy"
-            }
-        ]
-    ],
-    "menu_order": 2,
-    "position": "normal",
-    "style": "seamless",
-    "label_placement": "top",
-    "instruction_placement": "label",
-    "hide_on_screen": "",
-    "active": 1,
-    "description": "Reciprocal relation to 'Vacancy'",
-    "modified": 1513852512
+    ]
 }

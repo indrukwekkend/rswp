@@ -4,18 +4,16 @@
 
 	<div class="card-body">
 
-		<?php if( has_post_thumbnail() && ( is_singular('location') || is_singular('service') || is_front_page() ) ):?>
+    <?php if( !is_single('kenniscentrum-mantelzorg') and !is_archive() ): ?>
+  		<?php if( has_post_thumbnail() ):?>
 
-			<img class="card-img-top border border-primary mb-2" src="<? the_post_thumbnail_url(); ?>" alt="<? the_title(); ?>">
+  			<img class="card-img-top border border-primary mb-2" src="<? the_post_thumbnail_url(); ?>" alt="<? the_title(); ?>">
 
-    <?php else: ?>
-
-      <?php if( !is_archive() ): ?>
+      <?php else: ?>
 
         <img class="card-img-top border border-primary mb-2" src="<?= Assets\asset_path('images/post-default.jpg'); ?>" alt="<? the_title(); ?>">
 
       <?php endif; ?>
-
     <?php endif; ?>
 
 		<div class="card-title mb-1">
@@ -41,7 +39,7 @@
 
 </article>
 
-<?php if( is_home() || is_archive() ): ?>
+<?php if( is_archive() or is_single('kenniscentrum-mantelzorg') ): ?>
 	<?php if (($wp_query->current_post +1) != ($wp_query->post_count)): ?>
 		<hr>
 	<?php endif; ?>
