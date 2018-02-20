@@ -1,31 +1,29 @@
 {
     "key": "group_5a32712e033be",
     "title": "Locaties (Activiteiten)",
-    "location": [
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "activity"
-            }
-        ]
-    ],
-    "menu_order": 2,
-    "position": "normal",
-    "style": "seamless",
-    "label_placement": "top",
-    "instruction_placement": "label",
-    "hide_on_screen": "",
-    "active": 1,
-    "description": "Reciprocal relation to 'Activity'",
-    "modified": 1517308965,
     "fields": [
+        {
+            "key": "field_5a8a934f5c282",
+            "label": "Datum en (start) tijd van deze activiteit",
+            "name": "datum_en_tijd",
+            "type": "date_time_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "d\/m\/Y H:i",
+            "return_format": "j F - H:i",
+            "first_day": 1
+        },
         {
             "key": "field_5a32712e0bb0a",
             "label": "Activiteit locaties",
             "name": "location_activity",
             "type": "relationship",
-            "value": null,
             "instructions": "Kies de locatie(s) waarbij deze activiteit hoort.",
             "required": 0,
             "conditional_logic": 0,
@@ -46,5 +44,23 @@
             "max": "",
             "return_format": "object"
         }
-    ]
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "activity"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "Reciprocal relation to 'Activity'",
+    "modified": 1519032861
 }

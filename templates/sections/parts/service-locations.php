@@ -6,7 +6,7 @@
 
 		<?php $total_tags = count($post_objects); ?>
 
-		<?php if($post_objects && ($total_tags > 1) ): ?>
+		<?php if($post_objects && ($total_tags > 0) ): ?>
 			<?php $i=0; ?>
 
 			<div><b>Aangeboden in:</b></div>

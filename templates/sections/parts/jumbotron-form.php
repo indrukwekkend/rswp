@@ -11,7 +11,8 @@
 					<label for="input-location" class="col-5 col-sm-4"><i class="fa fa-map-marker text-primary mr-2"></i>LOCATIE</label>
 
 					<div class="col">
-						<?php $args = array('post_type' => 'location', 'orderby' => 'title', 'order' => 'ASC'); ?>
+						<?php $args = array('post_type' => 'location', 'orderby' => 'title', 'order' => 'ASC', 'meta_key' => 'location_type', 'meta_value'	=> 'location'); ?>
+						<?php //$args = array('post_type' => 'location', 'orderby' => 'title', 'order' => 'ASC'); ?>
 						<?php $query = new wp_query( $args ); ?>
 
 						<?php if($query->have_posts()): ?>

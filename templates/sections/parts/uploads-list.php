@@ -11,7 +11,7 @@
           <li><i class="fa fa-globe text-primary mr-2"></i><a href="<? the_sub_field('url'); ?>" target="_blank"><? the_sub_field('title'); ?></a></li>
         <?php else: ?>
           <?php if( get_sub_field('file') ): ?>
-            <li><i class="fa fa-file-pdf-o text-primary mr-2"></i><a href="<? the_sub_field('file'); ?>"><? the_sub_field('title'); ?></a></li>
+            <li><i class="fa fa-file-pdf-o text-primary mr-2"></i><a href="<? the_sub_field('file'); ?>" target="_blank"><? the_sub_field('title'); ?></a></li>
           <?php endif; ?>
         <?php endif; ?>
 

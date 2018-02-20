@@ -8,6 +8,8 @@
 
 		<div class="col-4">
 			<?php get_template_part('templates/sections/parts/locations','list'); ?>
+			
+			<?php get_template_part('templates/sections/parts/uploads','list'); ?>
 		</div>
 
 	</div>

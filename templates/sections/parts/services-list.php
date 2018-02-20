@@ -28,7 +28,7 @@
 
     <div class="row pb-4">
       <div class="col-12 text-center my-2">
-        <a class="btn btn-radius btn-primary px-4" href="/services">BEKIJK ALLE DIENSTEN</a>
+        <a class="btn btn-radius btn-primary px-4" href="/services">BEKIJK ALLE DIENSTEN VAN RSWP</a>
       </div>
     </div>
   </section>
@@ -61,7 +61,7 @@
 
     <div class="row pb-4">
       <div class="col-12 text-center my-2">
-        <a class="btn btn-radius btn-primary px-4" href="/services">BEKIJK ALLE DIENSTEN</a>
+        <a class="btn btn-radius btn-primary px-4" href="/services">BEKIJK ALLE DIENSTEN VAN RSWP</a>
       </div>
     </div>
   </section>

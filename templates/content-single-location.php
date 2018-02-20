@@ -1,8 +1,9 @@
 <?php if( is_single('kenniscentrum-mantelzorg') ): ?>
 
+
   <?php get_template_part('templates/header','page'); ?>
 
-  <?php $args = array('post_type' => 'service'); ?>
+  <?php $args = array('post_type' => 'service', 'meta_key' => 'knowledgeitem', 'meta_value' => 'knowledge'); ?>
   <?php $query = new wp_query( $args ); ?>
   <?php if($query->have_posts()): ?>
 
@@ -17,6 +18,8 @@
     <?php wp_reset_postdata(); ?>
     <?php wp_reset_query(); ?>
   <?php endif; ?>
+
+
 
 <?php else: ?>
   <?php while (have_posts()) : the_post(); ?>

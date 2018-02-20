@@ -10,7 +10,19 @@
 		</div>
 
 		<div class="col-6 posts">
-			<?php $args = array('post_type' => 'post', 'posts_per_page' =>  2, );?>
+			
+			<?php if(  is_singular('location')  ) :   ?>
+				
+				<?php $location = get_the_id(); ?>
+				
+					<?php $args = array('post_type' => 'post', 'posts_per_page' =>  2, 'meta_value' => $location, 'meta_key' => 'location' );?>
+				
+				<?php else: ?>
+				
+					<?php $args = array('post_type' => 'post', 'posts_per_page' =>  2 );?>
+				
+				<?php endif; ?>
+			
 			<?php $the_query = new WP_Query( $args ); ?>
 
 			<?php if ( $the_query->have_posts() ): ?>
